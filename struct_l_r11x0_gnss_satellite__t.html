@@ -5,7 +5,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=9"/>
 <meta name="generator" content="Doxygen 1.9.1"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>RadioLib: Member List</title>
+<title>RadioLib: LR11x0GnssSatellite_t Struct Reference</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -63,7 +63,7 @@ $(function() {
 </div>
 <script type="text/javascript">
 /* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
-$(document).ready(function(){initNavTree('struct_lo_ra_w_a_n_mac_spec__t.html',''); initResizable(); });
+$(document).ready(function(){initNavTree('struct_l_r11x0_gnss_satellite__t.html',''); initResizable(); });
 /* @license-end */
 </script>
 <div id="doc-content">
@@ -82,22 +82,45 @@ $(document).ready(function(){initNavTree('struct_lo_ra_w_a_n_mac_spec__t.html','
 </div>
 
 <div class="header">
+  <div class="summary">
+<a href="#pub-attribs">Public Attributes</a> &#124;
+<a href="struct_l_r11x0_gnss_satellite__t-members.html">List of all members</a>  </div>
   <div class="headertitle">
-<div class="title">LoRaWANMacSpec_t Member List</div>  </div>
+<div class="title">LR11x0GnssSatellite_t Struct Reference</div>  </div>
 </div><!--header-->
 <div class="contents">
 
-<p>This is the complete list of members for <a class="el" href="struct_lo_ra_w_a_n_mac_spec__t.html">LoRaWANMacSpec_t</a>, including all inherited members.</p>
-<table class="directory">
-  <tr class="even"><td class="entry"><a class="el" href="struct_lo_ra_w_a_n_mac_spec__t.html#a1b106b73be8b6ae35fda3e0d90795fe9">cid</a></td><td class="entry"><a class="el" href="struct_lo_ra_w_a_n_mac_spec__t.html">LoRaWANMacSpec_t</a></td><td class="entry"></td></tr>
-  <tr><td class="entry"><a class="el" href="struct_lo_ra_w_a_n_mac_spec__t.html#a41435d23013dd635ea34a51c2649e211">lenDn</a></td><td class="entry"><a class="el" href="struct_lo_ra_w_a_n_mac_spec__t.html">LoRaWANMacSpec_t</a></td><td class="entry"></td></tr>
-  <tr class="even"><td class="entry"><a class="el" href="struct_lo_ra_w_a_n_mac_spec__t.html#ad7f493f31c73dc2209eced9d2cbc6cc6">lenUp</a></td><td class="entry"><a class="el" href="struct_lo_ra_w_a_n_mac_spec__t.html">LoRaWANMacSpec_t</a></td><td class="entry"></td></tr>
-  <tr><td class="entry"><a class="el" href="struct_lo_ra_w_a_n_mac_spec__t.html#af817794fc458e31a575e8ab782bba584">user</a></td><td class="entry"><a class="el" href="struct_lo_ra_w_a_n_mac_spec__t.html">LoRaWANMacSpec_t</a></td><td class="entry"></td></tr>
-</table></div><!-- contents -->
+<p>Structure to save information about a satellite found during GNSS scan.  
+ <a href="struct_l_r11x0_gnss_satellite__t.html#details">More...</a></p>
+
+<p><code>#include &lt;<a class="el" href="_l_r11x0_8h_source.html">LR11x0.h</a>&gt;</code></p>
+<table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-attribs"></a>
+Public Attributes</h2></td></tr>
+<tr class="memitem:a0513395fd04c052b862c443dfbe75e84"><td class="memItemLeft" align="right" valign="top"><a id="a0513395fd04c052b862c443dfbe75e84"></a>
+uint8_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_l_r11x0_gnss_satellite__t.html#a0513395fd04c052b862c443dfbe75e84">svId</a></td></tr>
+<tr class="memdesc:a0513395fd04c052b862c443dfbe75e84"><td class="mdescLeft">&#160;</td><td class="mdescRight">Satellite vehicle (SV) identifier. <br /></td></tr>
+<tr class="separator:a0513395fd04c052b862c443dfbe75e84"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a1ca3d11db7b677955b7f1f3c4f85157f"><td class="memItemLeft" align="right" valign="top"><a id="a1ca3d11db7b677955b7f1f3c4f85157f"></a>
+uint8_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_l_r11x0_gnss_satellite__t.html#a1ca3d11db7b677955b7f1f3c4f85157f">c_n0</a></td></tr>
+<tr class="memdesc:a1ca3d11db7b677955b7f1f3c4f85157f"><td class="mdescLeft">&#160;</td><td class="mdescRight">C/N0 in dB. <br /></td></tr>
+<tr class="separator:a1ca3d11db7b677955b7f1f3c4f85157f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a670c9e916637b5fede43c5fbb26cbfd8"><td class="memItemLeft" align="right" valign="top"><a id="a670c9e916637b5fede43c5fbb26cbfd8"></a>
+int16_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="struct_l_r11x0_gnss_satellite__t.html#a670c9e916637b5fede43c5fbb26cbfd8">doppler</a></td></tr>
+<tr class="memdesc:a670c9e916637b5fede43c5fbb26cbfd8"><td class="mdescLeft">&#160;</td><td class="mdescRight">Doppler shift of the signal in Hz. <br /></td></tr>
+<tr class="separator:a670c9e916637b5fede43c5fbb26cbfd8"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table>
+<a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
+<div class="textblock"><p>Structure to save information about a satellite found during GNSS scan. </p>
+</div><hr/>The documentation for this struct was generated from the following file:<ul>
+<li>src/modules/LR11x0/<a class="el" href="_l_r11x0_8h_source.html">LR11x0.h</a></li>
+</ul>
+</div><!-- contents -->
 </div><!-- doc-content -->
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
+    <li class="navelem"><a class="el" href="struct_l_r11x0_gnss_satellite__t.html">LR11x0GnssSatellite_t</a></li>
     <li class="footer">Generated by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1 </li>
   </ul>
 </div>

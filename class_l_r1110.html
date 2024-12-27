@@ -116,15 +116,15 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:afcabcd9b422581cd8a63a63373a98155"><td class="memItemLeft" align="right" valign="top">int16_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_l_r1110.html#afcabcd9b422581cd8a63a63373a98155">beginGFSK</a> (float freq=434.0, float br=4.8, float freqDev=5.0, float rxBw=156.2, int8_t power=10, uint16_t preambleLength=16, float tcxoVoltage=1.6)</td></tr>
 <tr class="memdesc:afcabcd9b422581cd8a63a63373a98155"><td class="mdescLeft">&#160;</td><td class="mdescRight">Initialization method for FSK modem.  <a href="class_l_r1110.html#afcabcd9b422581cd8a63a63373a98155">More...</a><br /></td></tr>
 <tr class="separator:afcabcd9b422581cd8a63a63373a98155"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a9439d6d7a6c8dc5813a00c9e493810c0"><td class="memItemLeft" align="right" valign="top">int16_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_l_r1110.html#a9439d6d7a6c8dc5813a00c9e493810c0">beginLRFHSS</a> (float freq=434.0, uint8_t bw=RADIOLIB_LR11X0_LR_FHSS_BW_722_66, uint8_t cr=RADIOLIB_LR11X0_LR_FHSS_CR_2_3, int8_t power=10, float tcxoVoltage=1.6)</td></tr>
-<tr class="memdesc:a9439d6d7a6c8dc5813a00c9e493810c0"><td class="mdescLeft">&#160;</td><td class="mdescRight">Initialization method for LR-FHSS modem.  <a href="class_l_r1110.html#a9439d6d7a6c8dc5813a00c9e493810c0">More...</a><br /></td></tr>
-<tr class="separator:a9439d6d7a6c8dc5813a00c9e493810c0"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:acc15335d41446254c3b9a87572080388"><td class="memItemLeft" align="right" valign="top">int16_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_l_r1110.html#acc15335d41446254c3b9a87572080388">beginLRFHSS</a> (float freq=434.0, uint8_t bw=RADIOLIB_LR11X0_LR_FHSS_BW_722_66, uint8_t cr=RADIOLIB_LR11X0_LR_FHSS_CR_2_3, bool narrowGrid=true, int8_t power=10, float tcxoVoltage=1.6)</td></tr>
+<tr class="memdesc:acc15335d41446254c3b9a87572080388"><td class="mdescLeft">&#160;</td><td class="mdescRight">Initialization method for LR-FHSS modem.  <a href="class_l_r1110.html#acc15335d41446254c3b9a87572080388">More...</a><br /></td></tr>
+<tr class="separator:acc15335d41446254c3b9a87572080388"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ade94d20ea438cbd92c61e28d2232d7e8"><td class="memItemLeft" align="right" valign="top">int16_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_l_r1110.html#ade94d20ea438cbd92c61e28d2232d7e8">setFrequency</a> (float freq) override</td></tr>
-<tr class="memdesc:ade94d20ea438cbd92c61e28d2232d7e8"><td class="mdescLeft">&#160;</td><td class="mdescRight">Sets carrier frequency. Allowed values are in range from 150.0 to 960.0 MHz. Will also perform calibrations.  <a href="class_l_r1110.html#ade94d20ea438cbd92c61e28d2232d7e8">More...</a><br /></td></tr>
+<tr class="memdesc:ade94d20ea438cbd92c61e28d2232d7e8"><td class="mdescLeft">&#160;</td><td class="mdescRight">Sets carrier frequency. Allowed values are in range from 150.0 to 960.0 MHz. Will automatically perform image calibration if the frequency changes by more than RADIOLIB_LR11X0_CAL_IMG_FREQ_TRIG MHz.  <a href="class_l_r1110.html#ade94d20ea438cbd92c61e28d2232d7e8">More...</a><br /></td></tr>
 <tr class="separator:ade94d20ea438cbd92c61e28d2232d7e8"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a08c9ba9d02e7e3918f73f090c6d5ed33"><td class="memItemLeft" align="right" valign="top">int16_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_l_r1110.html#a08c9ba9d02e7e3918f73f090c6d5ed33">setFrequency</a> (float freq, bool calibrate, float band=4)</td></tr>
-<tr class="memdesc:a08c9ba9d02e7e3918f73f090c6d5ed33"><td class="mdescLeft">&#160;</td><td class="mdescRight">Sets carrier frequency. Allowed values are in range from 150.0 to 960.0 MHz.  <a href="class_l_r1110.html#a08c9ba9d02e7e3918f73f090c6d5ed33">More...</a><br /></td></tr>
-<tr class="separator:a08c9ba9d02e7e3918f73f090c6d5ed33"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4f9272d078b79d76315be7a57be3e547"><td class="memItemLeft" align="right" valign="top">int16_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_l_r1110.html#a4f9272d078b79d76315be7a57be3e547">setFrequency</a> (float freq, bool skipCalibration, float band=4)</td></tr>
+<tr class="memdesc:a4f9272d078b79d76315be7a57be3e547"><td class="mdescLeft">&#160;</td><td class="mdescRight">Sets carrier frequency. Allowed values are in range from 150.0 to 960.0 MHz. Will automatically perform image calibration if the frequency changes by more than RADIOLIB_LR11X0_CAL_IMG_FREQ_TRIG MHz.  <a href="class_l_r1110.html#a4f9272d078b79d76315be7a57be3e547">More...</a><br /></td></tr>
+<tr class="separator:a4f9272d078b79d76315be7a57be3e547"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a65c08f0475f888537e55401b75e58b23"><td class="memItemLeft" align="right" valign="top">int16_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_l_r1110.html#a65c08f0475f888537e55401b75e58b23">setOutputPower</a> (int8_t power) override</td></tr>
 <tr class="memdesc:a65c08f0475f888537e55401b75e58b23"><td class="mdescLeft">&#160;</td><td class="mdescRight">Sets output power. Allowed values are in range from -9 to 22 dBm (high-power PA) or -17 to 14 dBm (low-power PA).  <a href="class_l_r1110.html#a65c08f0475f888537e55401b75e58b23">More...</a><br /></td></tr>
 <tr class="separator:a65c08f0475f888537e55401b75e58b23"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -137,19 +137,25 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:ae084d4503b2abcdc508edef40b0cadb3"><td class="memItemLeft" align="right" valign="top">int16_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_l_r1110.html#ae084d4503b2abcdc508edef40b0cadb3">checkOutputPower</a> (int8_t power, int8_t *clipped, bool forceHighPower)</td></tr>
 <tr class="memdesc:ae084d4503b2abcdc508edef40b0cadb3"><td class="mdescLeft">&#160;</td><td class="mdescRight">Check if output power is configurable.  <a href="class_l_r1110.html#ae084d4503b2abcdc508edef40b0cadb3">More...</a><br /></td></tr>
 <tr class="separator:ae084d4503b2abcdc508edef40b0cadb3"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a18f525740237b023056a8ca6f3671c6a"><td class="memItemLeft" align="right" valign="top">int16_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_l_r1110.html#a18f525740237b023056a8ca6f3671c6a">setModem</a> (ModemType_t modem) override</td></tr>
+<tr class="memdesc:a18f525740237b023056a8ca6f3671c6a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Set modem for the radio to use. Will perform full reset and reconfigure the radio using its default parameters.  <a href="class_l_r1110.html#a18f525740237b023056a8ca6f3671c6a">More...</a><br /></td></tr>
+<tr class="separator:a18f525740237b023056a8ca6f3671c6a"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="inherit_header pub_methods_class_l_r11x0"><td colspan="2" onclick="javascript:toggleInherit('pub_methods_class_l_r11x0')"><img src="closed.png" alt="-"/>&#160;Public Member Functions inherited from <a class="el" href="class_l_r11x0.html">LR11x0</a></td></tr>
 <tr class="memitem:a562f34a054e3374b812556df3b6eb421 inherit pub_methods_class_l_r11x0"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_l_r11x0.html#a562f34a054e3374b812556df3b6eb421">LR11x0</a> (<a class="el" href="class_module.html">Module</a> *mod)</td></tr>
 <tr class="memdesc:a562f34a054e3374b812556df3b6eb421 inherit pub_methods_class_l_r11x0"><td class="mdescLeft">&#160;</td><td class="mdescRight">Default constructor.  <a href="class_l_r11x0.html#a562f34a054e3374b812556df3b6eb421">More...</a><br /></td></tr>
 <tr class="separator:a562f34a054e3374b812556df3b6eb421 inherit pub_methods_class_l_r11x0"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a8dc6468762c36c30e9af262014e17942 inherit pub_methods_class_l_r11x0"><td class="memItemLeft" align="right" valign="top">int16_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_l_r11x0.html#a8dc6468762c36c30e9af262014e17942">begin</a> (float bw, uint8_t sf, uint8_t cr, uint8_t syncWord, uint16_t preambleLength, float tcxoVoltage)</td></tr>
-<tr class="memdesc:a8dc6468762c36c30e9af262014e17942 inherit pub_methods_class_l_r11x0"><td class="mdescLeft">&#160;</td><td class="mdescRight">Initialization method for LoRa modem.  <a href="class_l_r11x0.html#a8dc6468762c36c30e9af262014e17942">More...</a><br /></td></tr>
-<tr class="separator:a8dc6468762c36c30e9af262014e17942 inherit pub_methods_class_l_r11x0"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa2b69f68ff6171b11a1141c8615240fd inherit pub_methods_class_l_r11x0"><td class="memItemLeft" align="right" valign="top">int16_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_l_r11x0.html#aa2b69f68ff6171b11a1141c8615240fd">begin</a> (float bw, uint8_t sf, uint8_t cr, uint8_t syncWord, uint16_t preambleLength, float tcxoVoltage, bool high=false)</td></tr>
+<tr class="memdesc:aa2b69f68ff6171b11a1141c8615240fd inherit pub_methods_class_l_r11x0"><td class="mdescLeft">&#160;</td><td class="mdescRight">Initialization method for LoRa modem.  <a href="class_l_r11x0.html#aa2b69f68ff6171b11a1141c8615240fd">More...</a><br /></td></tr>
+<tr class="separator:aa2b69f68ff6171b11a1141c8615240fd inherit pub_methods_class_l_r11x0"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:abcc4c776d1a09bb002226ac95574766d inherit pub_methods_class_l_r11x0"><td class="memItemLeft" align="right" valign="top">int16_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_l_r11x0.html#abcc4c776d1a09bb002226ac95574766d">beginGFSK</a> (float br, float freqDev, float rxBw, uint16_t preambleLength, float tcxoVoltage)</td></tr>
 <tr class="memdesc:abcc4c776d1a09bb002226ac95574766d inherit pub_methods_class_l_r11x0"><td class="mdescLeft">&#160;</td><td class="mdescRight">Initialization method for FSK modem.  <a href="class_l_r11x0.html#abcc4c776d1a09bb002226ac95574766d">More...</a><br /></td></tr>
 <tr class="separator:abcc4c776d1a09bb002226ac95574766d inherit pub_methods_class_l_r11x0"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a858b08fd0e7b00baf3056d32dfabb87e inherit pub_methods_class_l_r11x0"><td class="memItemLeft" align="right" valign="top">int16_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_l_r11x0.html#a858b08fd0e7b00baf3056d32dfabb87e">beginLRFHSS</a> (uint8_t bw, uint8_t cr, float tcxoVoltage)</td></tr>
-<tr class="memdesc:a858b08fd0e7b00baf3056d32dfabb87e inherit pub_methods_class_l_r11x0"><td class="mdescLeft">&#160;</td><td class="mdescRight">Initialization method for LR-FHSS modem.  <a href="class_l_r11x0.html#a858b08fd0e7b00baf3056d32dfabb87e">More...</a><br /></td></tr>
-<tr class="separator:a858b08fd0e7b00baf3056d32dfabb87e inherit pub_methods_class_l_r11x0"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a244ee48075d44c7064b454eb9c4afdb8 inherit pub_methods_class_l_r11x0"><td class="memItemLeft" align="right" valign="top">int16_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_l_r11x0.html#a244ee48075d44c7064b454eb9c4afdb8">beginLRFHSS</a> (uint8_t bw, uint8_t cr, bool narrowGrid, float tcxoVoltage)</td></tr>
+<tr class="memdesc:a244ee48075d44c7064b454eb9c4afdb8 inherit pub_methods_class_l_r11x0"><td class="mdescLeft">&#160;</td><td class="mdescRight">Initialization method for LR-FHSS modem.  <a href="class_l_r11x0.html#a244ee48075d44c7064b454eb9c4afdb8">More...</a><br /></td></tr>
+<tr class="separator:a244ee48075d44c7064b454eb9c4afdb8 inherit pub_methods_class_l_r11x0"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad7f31060cbab41ad53ee6fa7126cd17b inherit pub_methods_class_l_r11x0"><td class="memItemLeft" align="right" valign="top">int16_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_l_r11x0.html#ad7f31060cbab41ad53ee6fa7126cd17b">beginGNSS</a> (uint8_t constellations=RADIOLIB_LR11X0_GNSS_CONSTELLATION_GPS|RADIOLIB_LR11X0_GNSS_CONSTELLATION_BEIDOU, float tcxoVoltage=1.6)</td></tr>
+<tr class="memdesc:ad7f31060cbab41ad53ee6fa7126cd17b inherit pub_methods_class_l_r11x0"><td class="mdescLeft">&#160;</td><td class="mdescRight">Initialization method for GNSS scanning.  <a href="class_l_r11x0.html#ad7f31060cbab41ad53ee6fa7126cd17b">More...</a><br /></td></tr>
+<tr class="separator:ad7f31060cbab41ad53ee6fa7126cd17b inherit pub_methods_class_l_r11x0"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a288bcc309d3676bc0bbe620b7d89d994 inherit pub_methods_class_l_r11x0"><td class="memItemLeft" align="right" valign="top">int16_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_l_r11x0.html#a288bcc309d3676bc0bbe620b7d89d994">reset</a> ()</td></tr>
 <tr class="memdesc:a288bcc309d3676bc0bbe620b7d89d994 inherit pub_methods_class_l_r11x0"><td class="mdescLeft">&#160;</td><td class="mdescRight">Reset method. Will reset the chip to the default state using RST pin.  <a href="class_l_r11x0.html#a288bcc309d3676bc0bbe620b7d89d994">More...</a><br /></td></tr>
 <tr class="separator:a288bcc309d3676bc0bbe620b7d89d994 inherit pub_methods_class_l_r11x0"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -168,9 +174,9 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:a6a3034c91f5bce70c853ab1620725b3c inherit pub_methods_class_l_r11x0"><td class="memItemLeft" align="right" valign="top">int16_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_l_r11x0.html#a6a3034c91f5bce70c853ab1620725b3c">scanChannel</a> () override</td></tr>
 <tr class="memdesc:a6a3034c91f5bce70c853ab1620725b3c inherit pub_methods_class_l_r11x0"><td class="mdescLeft">&#160;</td><td class="mdescRight">Performs scan for LoRa transmission in the current channel. Detects both preamble and payload.  <a href="class_l_r11x0.html#a6a3034c91f5bce70c853ab1620725b3c">More...</a><br /></td></tr>
 <tr class="separator:a6a3034c91f5bce70c853ab1620725b3c inherit pub_methods_class_l_r11x0"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a99ece57e55ee0001671165213b409a44 inherit pub_methods_class_l_r11x0"><td class="memItemLeft" align="right" valign="top">int16_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_l_r11x0.html#a99ece57e55ee0001671165213b409a44">scanChannel</a> (uint8_t symbolNum, uint8_t detPeak, uint8_t detMin)</td></tr>
-<tr class="memdesc:a99ece57e55ee0001671165213b409a44 inherit pub_methods_class_l_r11x0"><td class="mdescLeft">&#160;</td><td class="mdescRight">Performs scan for LoRa transmission in the current channel. Detects both preamble and payload.  <a href="class_l_r11x0.html#a99ece57e55ee0001671165213b409a44">More...</a><br /></td></tr>
-<tr class="separator:a99ece57e55ee0001671165213b409a44 inherit pub_methods_class_l_r11x0"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5e8f21878bdab1439805aea1e9da168d inherit pub_methods_class_l_r11x0"><td class="memItemLeft" align="right" valign="top">int16_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_l_r11x0.html#a5e8f21878bdab1439805aea1e9da168d">scanChannel</a> (const <a class="el" href="union_channel_scan_config__t.html">ChannelScanConfig_t</a> &amp;config) override</td></tr>
+<tr class="memdesc:a5e8f21878bdab1439805aea1e9da168d inherit pub_methods_class_l_r11x0"><td class="mdescLeft">&#160;</td><td class="mdescRight">Performs scan for LoRa transmission in the current channel. Detects both preamble and payload.  <a href="class_l_r11x0.html#a5e8f21878bdab1439805aea1e9da168d">More...</a><br /></td></tr>
+<tr class="separator:a5e8f21878bdab1439805aea1e9da168d inherit pub_methods_class_l_r11x0"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a74c3f3f8409f1fd0f41347b7d3c7dc24 inherit pub_methods_class_l_r11x0"><td class="memItemLeft" align="right" valign="top">int16_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_l_r11x0.html#a74c3f3f8409f1fd0f41347b7d3c7dc24">standby</a> () override</td></tr>
 <tr class="memdesc:a74c3f3f8409f1fd0f41347b7d3c7dc24 inherit pub_methods_class_l_r11x0"><td class="mdescLeft">&#160;</td><td class="mdescRight">Sets the module to standby mode (overload for <a class="el" href="class_physical_layer.html" title="Provides common interface for protocols that run on LoRa/FSK modules, such as RTTY or LoRaWAN....">PhysicalLayer</a> compatibility, uses 13 MHz RC oscillator).  <a href="class_l_r11x0.html#a74c3f3f8409f1fd0f41347b7d3c7dc24">More...</a><br /></td></tr>
 <tr class="separator:a74c3f3f8409f1fd0f41347b7d3c7dc24 inherit pub_methods_class_l_r11x0"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -225,24 +231,24 @@ void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="clas
 <tr class="memitem:a4f3bc362530b85dd643669705f03998d inherit pub_methods_class_l_r11x0"><td class="memItemLeft" align="right" valign="top">int16_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_l_r11x0.html#a4f3bc362530b85dd643669705f03998d">startChannelScan</a> () override</td></tr>
 <tr class="memdesc:a4f3bc362530b85dd643669705f03998d inherit pub_methods_class_l_r11x0"><td class="mdescLeft">&#160;</td><td class="mdescRight">Interrupt-driven channel activity detection method. IRQ1 will be activated when LoRa preamble is detected, or upon timeout. Defaults to CAD parameter values recommended by AN1200.48.  <a href="class_l_r11x0.html#a4f3bc362530b85dd643669705f03998d">More...</a><br /></td></tr>
 <tr class="separator:a4f3bc362530b85dd643669705f03998d inherit pub_methods_class_l_r11x0"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aa09eb53b0c32a5f229e14c46bfe45a4f inherit pub_methods_class_l_r11x0"><td class="memItemLeft" align="right" valign="top">int16_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_l_r11x0.html#aa09eb53b0c32a5f229e14c46bfe45a4f">startChannelScan</a> (uint8_t symbolNum, uint8_t detPeak, uint8_t detMin)</td></tr>
-<tr class="memdesc:aa09eb53b0c32a5f229e14c46bfe45a4f inherit pub_methods_class_l_r11x0"><td class="mdescLeft">&#160;</td><td class="mdescRight">Interrupt-driven channel activity detection method. IRQ1 will be activated when LoRa preamble is detected, or upon timeout.  <a href="class_l_r11x0.html#aa09eb53b0c32a5f229e14c46bfe45a4f">More...</a><br /></td></tr>
-<tr class="separator:aa09eb53b0c32a5f229e14c46bfe45a4f inherit pub_methods_class_l_r11x0"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab073ade3f6b9bbb383e388904812f575 inherit pub_methods_class_l_r11x0"><td class="memItemLeft" align="right" valign="top">int16_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_l_r11x0.html#ab073ade3f6b9bbb383e388904812f575">startChannelScan</a> (const <a class="el" href="union_channel_scan_config__t.html">ChannelScanConfig_t</a> &amp;config) override</td></tr>
+<tr class="memdesc:ab073ade3f6b9bbb383e388904812f575 inherit pub_methods_class_l_r11x0"><td class="mdescLeft">&#160;</td><td class="mdescRight">Interrupt-driven channel activity detection method. IRQ pin will be activated when LoRa preamble is detected, or upon timeout.  <a href="class_l_r11x0.html#ab073ade3f6b9bbb383e388904812f575">More...</a><br /></td></tr>
+<tr class="separator:ab073ade3f6b9bbb383e388904812f575 inherit pub_methods_class_l_r11x0"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a1ae2cddeb7671d9b71e9c83bf020820f inherit pub_methods_class_l_r11x0"><td class="memItemLeft" align="right" valign="top">int16_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_l_r11x0.html#a1ae2cddeb7671d9b71e9c83bf020820f">getChannelScanResult</a> () override</td></tr>
 <tr class="memdesc:a1ae2cddeb7671d9b71e9c83bf020820f inherit pub_methods_class_l_r11x0"><td class="mdescLeft">&#160;</td><td class="mdescRight">Read the channel scan result.  <a href="class_l_r11x0.html#a1ae2cddeb7671d9b71e9c83bf020820f">More...</a><br /></td></tr>
 <tr class="separator:a1ae2cddeb7671d9b71e9c83bf020820f inherit pub_methods_class_l_r11x0"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:abf961ec7d93feb6472f26b7b976ee0c9 inherit pub_methods_class_l_r11x0"><td class="memItemLeft" align="right" valign="top">int16_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_l_r11x0.html#abf961ec7d93feb6472f26b7b976ee0c9">setBandwidth</a> (float bw)</td></tr>
-<tr class="memdesc:abf961ec7d93feb6472f26b7b976ee0c9 inherit pub_methods_class_l_r11x0"><td class="mdescLeft">&#160;</td><td class="mdescRight">Sets LoRa bandwidth. Allowed values are 62.5, 125.0, 250.0 and 500.0 kHz.  <a href="class_l_r11x0.html#abf961ec7d93feb6472f26b7b976ee0c9">More...</a><br /></td></tr>
-<tr class="separator:abf961ec7d93feb6472f26b7b976ee0c9 inherit pub_methods_class_l_r11x0"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a70d9849eb8e5ce2090e4e332252753d7 inherit pub_methods_class_l_r11x0"><td class="memItemLeft" align="right" valign="top">int16_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_l_r11x0.html#a70d9849eb8e5ce2090e4e332252753d7">setBandwidth</a> (float bw, bool high=false)</td></tr>
+<tr class="memdesc:a70d9849eb8e5ce2090e4e332252753d7 inherit pub_methods_class_l_r11x0"><td class="mdescLeft">&#160;</td><td class="mdescRight">Sets LoRa bandwidth. Allowed values are 62.5, 125.0, 250.0 and 500.0 kHz. (default, high = false)  <a href="class_l_r11x0.html#a70d9849eb8e5ce2090e4e332252753d7">More...</a><br /></td></tr>
+<tr class="separator:a70d9849eb8e5ce2090e4e332252753d7 inherit pub_methods_class_l_r11x0"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:adf6895cbf7af7e00ea06c5b2b5040cb4 inherit pub_methods_class_l_r11x0"><td class="memItemLeft" align="right" valign="top">int16_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_l_r11x0.html#adf6895cbf7af7e00ea06c5b2b5040cb4">setSpreadingFactor</a> (uint8_t sf, bool legacy=false)</td></tr>
 <tr class="memdesc:adf6895cbf7af7e00ea06c5b2b5040cb4 inherit pub_methods_class_l_r11x0"><td class="mdescLeft">&#160;</td><td class="mdescRight">Sets LoRa spreading factor. Allowed values range from 5 to 12.  <a href="class_l_r11x0.html#adf6895cbf7af7e00ea06c5b2b5040cb4">More...</a><br /></td></tr>
 <tr class="separator:adf6895cbf7af7e00ea06c5b2b5040cb4 inherit pub_methods_class_l_r11x0"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a583f2d5ed601a98c609dbf0d57f2f541 inherit pub_methods_class_l_r11x0"><td class="memItemLeft" align="right" valign="top">int16_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_l_r11x0.html#a583f2d5ed601a98c609dbf0d57f2f541">setCodingRate</a> (uint8_t cr, bool longInterleave=false)</td></tr>
 <tr class="memdesc:a583f2d5ed601a98c609dbf0d57f2f541 inherit pub_methods_class_l_r11x0"><td class="mdescLeft">&#160;</td><td class="mdescRight">Sets LoRa coding rate denominator. Allowed values range from 5 to 8.  <a href="class_l_r11x0.html#a583f2d5ed601a98c609dbf0d57f2f541">More...</a><br /></td></tr>
 <tr class="separator:a583f2d5ed601a98c609dbf0d57f2f541 inherit pub_methods_class_l_r11x0"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a7ffa48f1b6aaaa3f48e4b51f8ada59d8 inherit pub_methods_class_l_r11x0"><td class="memItemLeft" align="right" valign="top">int16_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_l_r11x0.html#a7ffa48f1b6aaaa3f48e4b51f8ada59d8">setSyncWord</a> (uint32_t syncWord)</td></tr>
-<tr class="memdesc:a7ffa48f1b6aaaa3f48e4b51f8ada59d8 inherit pub_methods_class_l_r11x0"><td class="mdescLeft">&#160;</td><td class="mdescRight">Sets LoRa or LR-FHSS sync word.  <a href="class_l_r11x0.html#a7ffa48f1b6aaaa3f48e4b51f8ada59d8">More...</a><br /></td></tr>
-<tr class="separator:a7ffa48f1b6aaaa3f48e4b51f8ada59d8 inherit pub_methods_class_l_r11x0"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aee7dbdbd76f4639395af4a0db17025a7 inherit pub_methods_class_l_r11x0"><td class="memItemLeft" align="right" valign="top">int16_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_l_r11x0.html#aee7dbdbd76f4639395af4a0db17025a7">setSyncWord</a> (uint8_t syncWord)</td></tr>
+<tr class="memdesc:aee7dbdbd76f4639395af4a0db17025a7 inherit pub_methods_class_l_r11x0"><td class="mdescLeft">&#160;</td><td class="mdescRight">Sets LoRa sync word.  <a href="class_l_r11x0.html#aee7dbdbd76f4639395af4a0db17025a7">More...</a><br /></td></tr>
+<tr class="separator:aee7dbdbd76f4639395af4a0db17025a7 inherit pub_methods_class_l_r11x0"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ab1954e4733a7fbea4129d9a2de2285d9 inherit pub_methods_class_l_r11x0"><td class="memItemLeft" align="right" valign="top">int16_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_l_r11x0.html#ab1954e4733a7fbea4129d9a2de2285d9">setBitRate</a> (float br) override</td></tr>
 <tr class="memdesc:ab1954e4733a7fbea4129d9a2de2285d9 inherit pub_methods_class_l_r11x0"><td class="mdescLeft">&#160;</td><td class="mdescRight">Sets GFSK bit rate. Allowed values range from 0.6 to 300.0 kbps.  <a href="class_l_r11x0.html#ab1954e4733a7fbea4129d9a2de2285d9">More...</a><br /></td></tr>
 <tr class="separator:ab1954e4733a7fbea4129d9a2de2285d9 inherit pub_methods_class_l_r11x0"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -321,12 +327,15 @@ void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="clas
 <tr class="memitem:a260c7f4ee4739e532ddb465a276205d3 inherit pub_methods_class_l_r11x0"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group__typedefs.html#ga210f31dd2bff7fb80563275648a5bbbd">RadioLibTime_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_l_r11x0.html#a260c7f4ee4739e532ddb465a276205d3">calculateRxTimeout</a> (<a class="el" href="group__typedefs.html#ga210f31dd2bff7fb80563275648a5bbbd">RadioLibTime_t</a> timeoutUs) override</td></tr>
 <tr class="memdesc:a260c7f4ee4739e532ddb465a276205d3 inherit pub_methods_class_l_r11x0"><td class="mdescLeft">&#160;</td><td class="mdescRight">Calculate the timeout value for this specific module / series (in number of symbols or units of time)  <a href="class_l_r11x0.html#a260c7f4ee4739e532ddb465a276205d3">More...</a><br /></td></tr>
 <tr class="separator:a260c7f4ee4739e532ddb465a276205d3 inherit pub_methods_class_l_r11x0"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:af441859fbeed4ee5d32519d26e94c68b inherit pub_methods_class_l_r11x0"><td class="memItemLeft" align="right" valign="top">int16_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_l_r11x0.html#af441859fbeed4ee5d32519d26e94c68b">irqRxDoneRxTimeout</a> (uint32_t &amp;irqFlags, uint32_t &amp;irqMask) override</td></tr>
-<tr class="memdesc:af441859fbeed4ee5d32519d26e94c68b inherit pub_methods_class_l_r11x0"><td class="mdescLeft">&#160;</td><td class="mdescRight">Create the flags that make up RxDone and RxTimeout used for receiving downlinks.  <a href="class_l_r11x0.html#af441859fbeed4ee5d32519d26e94c68b">More...</a><br /></td></tr>
-<tr class="separator:af441859fbeed4ee5d32519d26e94c68b inherit pub_methods_class_l_r11x0"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a8d3e5877dcd784c8e922f32ff773dc61 inherit pub_methods_class_l_r11x0"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_l_r11x0.html#a8d3e5877dcd784c8e922f32ff773dc61">isRxTimeout</a> () override</td></tr>
-<tr class="memdesc:a8d3e5877dcd784c8e922f32ff773dc61 inherit pub_methods_class_l_r11x0"><td class="mdescLeft">&#160;</td><td class="mdescRight">Check whether the IRQ bit for RxTimeout is set.  <a href="class_l_r11x0.html#a8d3e5877dcd784c8e922f32ff773dc61">More...</a><br /></td></tr>
-<tr class="separator:a8d3e5877dcd784c8e922f32ff773dc61 inherit pub_methods_class_l_r11x0"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a205364e65d54f3f87b9b8f5972cdcb99 inherit pub_methods_class_l_r11x0"><td class="memItemLeft" align="right" valign="top">uint32_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_l_r11x0.html#a205364e65d54f3f87b9b8f5972cdcb99">getIrqFlags</a> () override</td></tr>
+<tr class="memdesc:a205364e65d54f3f87b9b8f5972cdcb99 inherit pub_methods_class_l_r11x0"><td class="mdescLeft">&#160;</td><td class="mdescRight">Read currently active IRQ flags.  <a href="class_l_r11x0.html#a205364e65d54f3f87b9b8f5972cdcb99">More...</a><br /></td></tr>
+<tr class="separator:a205364e65d54f3f87b9b8f5972cdcb99 inherit pub_methods_class_l_r11x0"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a62c715ab18ea8a2e08a2791d3e764ee9 inherit pub_methods_class_l_r11x0"><td class="memItemLeft" align="right" valign="top">int16_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_l_r11x0.html#a62c715ab18ea8a2e08a2791d3e764ee9">setIrqFlags</a> (uint32_t irq) override</td></tr>
+<tr class="memdesc:a62c715ab18ea8a2e08a2791d3e764ee9 inherit pub_methods_class_l_r11x0"><td class="mdescLeft">&#160;</td><td class="mdescRight">Set interrupt on IRQ pin to be sent on a specific IRQ bit (e.g. RxTimeout, CadDone).  <a href="class_l_r11x0.html#a62c715ab18ea8a2e08a2791d3e764ee9">More...</a><br /></td></tr>
+<tr class="separator:a62c715ab18ea8a2e08a2791d3e764ee9 inherit pub_methods_class_l_r11x0"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa524b0be7b8d125c24319072d6178e74 inherit pub_methods_class_l_r11x0"><td class="memItemLeft" align="right" valign="top">int16_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_l_r11x0.html#aa524b0be7b8d125c24319072d6178e74">clearIrqFlags</a> (uint32_t irq) override</td></tr>
+<tr class="memdesc:aa524b0be7b8d125c24319072d6178e74 inherit pub_methods_class_l_r11x0"><td class="mdescLeft">&#160;</td><td class="mdescRight">Clear interrupt on a specific IRQ bit (e.g. RxTimeout, CadDone).  <a href="class_l_r11x0.html#aa524b0be7b8d125c24319072d6178e74">More...</a><br /></td></tr>
+<tr class="separator:aa524b0be7b8d125c24319072d6178e74 inherit pub_methods_class_l_r11x0"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a89b16d2231f588b67dc3aab0c0a467f4 inherit pub_methods_class_l_r11x0"><td class="memItemLeft" align="right" valign="top">uint8_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_l_r11x0.html#a89b16d2231f588b67dc3aab0c0a467f4">randomByte</a> () override</td></tr>
 <tr class="memdesc:a89b16d2231f588b67dc3aab0c0a467f4 inherit pub_methods_class_l_r11x0"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get one truly random byte from RSSI noise.  <a href="class_l_r11x0.html#a89b16d2231f588b67dc3aab0c0a467f4">More...</a><br /></td></tr>
 <tr class="separator:a89b16d2231f588b67dc3aab0c0a467f4 inherit pub_methods_class_l_r11x0"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -351,6 +360,12 @@ void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="clas
 <tr class="memitem:a1981f0dfceca2b6175a69530ea13d643 inherit pub_methods_class_l_r11x0"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_l_r11x0.html#a1981f0dfceca2b6175a69530ea13d643">setRfSwitchTable</a> (const uint32_t(&amp;pins)[<a class="el" href="class_module.html#a0c11551e12579bbabf57b19e12555b3c">Module::RFSWITCH_MAX_PINS</a>], const <a class="el" href="struct_module_1_1_rf_switch_mode__t.html">Module::RfSwitchMode_t</a> table[])</td></tr>
 <tr class="memdesc:a1981f0dfceca2b6175a69530ea13d643 inherit pub_methods_class_l_r11x0"><td class="mdescLeft">&#160;</td><td class="mdescRight">Some modules contain external RF switch controlled by pins. This function gives RadioLib control over those pins to automatically switch between various modes.  <a href="class_l_r11x0.html#a1981f0dfceca2b6175a69530ea13d643">More...</a><br /></td></tr>
 <tr class="separator:a1981f0dfceca2b6175a69530ea13d643 inherit pub_methods_class_l_r11x0"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae0a47e772fe24c7b3f3d3288c4cd0941 inherit pub_methods_class_l_r11x0"><td class="memItemLeft" align="right" valign="top">int16_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_l_r11x0.html#ae0a47e772fe24c7b3f3d3288c4cd0941">forceLDRO</a> (bool enable)</td></tr>
+<tr class="memdesc:ae0a47e772fe24c7b3f3d3288c4cd0941 inherit pub_methods_class_l_r11x0"><td class="mdescLeft">&#160;</td><td class="mdescRight">Forces LoRa low data rate optimization. Only available in LoRa mode. After calling this method, LDRO will always be set to the provided value, regardless of symbol length. To re-enable automatic LDRO configuration, call <a class="el" href="class_l_r11x0.html#aa9a8db401189ba0ce5117512b5db6a58" title="Re-enables automatic LDRO configuration. Only available in LoRa mode. After calling this method,...">LR11x0::autoLDRO()</a>  <a href="class_l_r11x0.html#ae0a47e772fe24c7b3f3d3288c4cd0941">More...</a><br /></td></tr>
+<tr class="separator:ae0a47e772fe24c7b3f3d3288c4cd0941 inherit pub_methods_class_l_r11x0"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa9a8db401189ba0ce5117512b5db6a58 inherit pub_methods_class_l_r11x0"><td class="memItemLeft" align="right" valign="top">int16_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_l_r11x0.html#aa9a8db401189ba0ce5117512b5db6a58">autoLDRO</a> ()</td></tr>
+<tr class="memdesc:aa9a8db401189ba0ce5117512b5db6a58 inherit pub_methods_class_l_r11x0"><td class="mdescLeft">&#160;</td><td class="mdescRight">Re-enables automatic LDRO configuration. Only available in LoRa mode. After calling this method, LDRO will be enabled automatically when symbol length exceeds 16 ms.  <a href="class_l_r11x0.html#aa9a8db401189ba0ce5117512b5db6a58">More...</a><br /></td></tr>
+<tr class="separator:aa9a8db401189ba0ce5117512b5db6a58 inherit pub_methods_class_l_r11x0"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a8c1def9a01021a52f5bb82c119a9ad35 inherit pub_methods_class_l_r11x0"><td class="memItemLeft" align="right" valign="top">int16_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_l_r11x0.html#a8c1def9a01021a52f5bb82c119a9ad35">setLrFhssConfig</a> (uint8_t bw, uint8_t cr, uint8_t hdrCount=3, uint16_t hopSeed=0x13A)</td></tr>
 <tr class="memdesc:a8c1def9a01021a52f5bb82c119a9ad35 inherit pub_methods_class_l_r11x0"><td class="mdescLeft">&#160;</td><td class="mdescRight">Sets LR-FHSS configuration.  <a href="class_l_r11x0.html#a8c1def9a01021a52f5bb82c119a9ad35">More...</a><br /></td></tr>
 <tr class="separator:a8c1def9a01021a52f5bb82c119a9ad35 inherit pub_methods_class_l_r11x0"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -380,17 +395,32 @@ void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="clas
 <tr class="memdesc:ab2820cc2b740d6d42a079bbd8bd45b85 inherit pub_methods_class_l_r11x0"><td class="mdescLeft">&#160;</td><td class="mdescRight">Method to upload new firmware image to the device. The device will be automatically erased, a new firmware will be uploaded, written to flash and executed.  <a href="class_l_r11x0.html#ab2820cc2b740d6d42a079bbd8bd45b85">More...</a><br /></td></tr>
 <tr class="separator:ab2820cc2b740d6d42a079bbd8bd45b85 inherit pub_methods_class_l_r11x0"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a79818dae19d69d33a5a1facbb91c3774 inherit pub_methods_class_l_r11x0"><td class="memItemLeft" align="right" valign="top">int16_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_l_r11x0.html#a79818dae19d69d33a5a1facbb91c3774">isGnssScanCapable</a> ()</td></tr>
-<tr class="memdesc:a79818dae19d69d33a5a1facbb91c3774 inherit pub_methods_class_l_r11x0"><td class="mdescLeft">&#160;</td><td class="mdescRight">Method to check whether the device is capable of performing a GNSS scan. CAUTION: Work in progress! Most data is returned via debug prints.  <a href="class_l_r11x0.html#a79818dae19d69d33a5a1facbb91c3774">More...</a><br /></td></tr>
+<tr class="memdesc:a79818dae19d69d33a5a1facbb91c3774 inherit pub_methods_class_l_r11x0"><td class="mdescLeft">&#160;</td><td class="mdescRight">Method to check whether the device is capable of performing a GNSS scan.  <a href="class_l_r11x0.html#a79818dae19d69d33a5a1facbb91c3774">More...</a><br /></td></tr>
 <tr class="separator:a79818dae19d69d33a5a1facbb91c3774 inherit pub_methods_class_l_r11x0"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a9ec306f25f187415aac23906c0a948b1 inherit pub_methods_class_l_r11x0"><td class="memItemLeft" align="right" valign="top">int16_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_l_r11x0.html#a9ec306f25f187415aac23906c0a948b1">gnssScan</a> (uint16_t *resSize)</td></tr>
-<tr class="memdesc:a9ec306f25f187415aac23906c0a948b1 inherit pub_methods_class_l_r11x0"><td class="mdescLeft">&#160;</td><td class="mdescRight">Performs GNSS scan. CAUTION: Work in progress! Most data is returned via debug prints.  <a href="class_l_r11x0.html#a9ec306f25f187415aac23906c0a948b1">More...</a><br /></td></tr>
-<tr class="separator:a9ec306f25f187415aac23906c0a948b1 inherit pub_methods_class_l_r11x0"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a3f5a92e557dd580cb27824246a9049c1 inherit pub_methods_class_l_r11x0"><td class="memItemLeft" align="right" valign="top">int16_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_l_r11x0.html#a3f5a92e557dd580cb27824246a9049c1">getGnssScanResult</a> (uint16_t size)</td></tr>
-<tr class="memdesc:a3f5a92e557dd580cb27824246a9049c1 inherit pub_methods_class_l_r11x0"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get GNSS scan result. CAUTION: Work in progress! Most data is returned via debug prints.  <a href="class_l_r11x0.html#a3f5a92e557dd580cb27824246a9049c1">More...</a><br /></td></tr>
-<tr class="separator:a3f5a92e557dd580cb27824246a9049c1 inherit pub_methods_class_l_r11x0"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a6f02bff4720b5087f2a68834182651df inherit pub_methods_class_l_r11x0"><td class="memItemLeft" align="right" valign="top">int16_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_l_r11x0.html#a6f02bff4720b5087f2a68834182651df">getGnssPosition</a> (float *lat, float *lon, bool filtered=true)</td></tr>
-<tr class="memdesc:a6f02bff4720b5087f2a68834182651df inherit pub_methods_class_l_r11x0"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get GNSS position. CAUTION: Work in progress! Most data is returned via debug prints.  <a href="class_l_r11x0.html#a6f02bff4720b5087f2a68834182651df">More...</a><br /></td></tr>
-<tr class="separator:a6f02bff4720b5087f2a68834182651df inherit pub_methods_class_l_r11x0"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad9bfaf0bdd7045f5d41f18f3f953c294 inherit pub_methods_class_l_r11x0"><td class="memItemLeft" align="right" valign="top">int16_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_l_r11x0.html#ad9bfaf0bdd7045f5d41f18f3f953c294">gnssScan</a> (<a class="el" href="struct_l_r11x0_gnss_result__t.html">LR11x0GnssResult_t</a> *res=NULL)</td></tr>
+<tr class="memdesc:ad9bfaf0bdd7045f5d41f18f3f953c294 inherit pub_methods_class_l_r11x0"><td class="mdescLeft">&#160;</td><td class="mdescRight">Performs GNSS scan.  <a href="class_l_r11x0.html#ad9bfaf0bdd7045f5d41f18f3f953c294">More...</a><br /></td></tr>
+<tr class="separator:ad9bfaf0bdd7045f5d41f18f3f953c294 inherit pub_methods_class_l_r11x0"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a748d30cb7a0b419066f6361a966b306f inherit pub_methods_class_l_r11x0"><td class="memItemLeft" align="right" valign="top">int16_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_l_r11x0.html#a748d30cb7a0b419066f6361a966b306f">getGnssAlmanacStatus</a> (<a class="el" href="struct_l_r11x0_gnss_almanac_status__t.html">LR11x0GnssAlmanacStatus_t</a> *stat)</td></tr>
+<tr class="memdesc:a748d30cb7a0b419066f6361a966b306f inherit pub_methods_class_l_r11x0"><td class="mdescLeft">&#160;</td><td class="mdescRight">Read information about the almanac.  <a href="class_l_r11x0.html#a748d30cb7a0b419066f6361a966b306f">More...</a><br /></td></tr>
+<tr class="separator:a748d30cb7a0b419066f6361a966b306f inherit pub_methods_class_l_r11x0"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab2dbab0fe3433e914c19a8d03fe32358 inherit pub_methods_class_l_r11x0"><td class="memItemLeft" align="right" valign="top">int16_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_l_r11x0.html#ab2dbab0fe3433e914c19a8d03fe32358">gnssDelayUntilSubframe</a> (<a class="el" href="struct_l_r11x0_gnss_almanac_status__t.html">LR11x0GnssAlmanacStatus_t</a> *stat, uint8_t constellation)</td></tr>
+<tr class="memdesc:ab2dbab0fe3433e914c19a8d03fe32358 inherit pub_methods_class_l_r11x0"><td class="mdescLeft">&#160;</td><td class="mdescRight">Blocking wait until the next subframe with almanac data is available. Used to control timing during almanac update from satellite.  <a href="class_l_r11x0.html#ab2dbab0fe3433e914c19a8d03fe32358">More...</a><br /></td></tr>
+<tr class="separator:ab2dbab0fe3433e914c19a8d03fe32358 inherit pub_methods_class_l_r11x0"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a96aa9566399e46fc03f2b73b44058e3f inherit pub_methods_class_l_r11x0"><td class="memItemLeft" align="right" valign="top">int16_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_l_r11x0.html#a96aa9566399e46fc03f2b73b44058e3f">updateGnssAlmanac</a> (uint8_t constellation)</td></tr>
+<tr class="memdesc:a96aa9566399e46fc03f2b73b44058e3f inherit pub_methods_class_l_r11x0"><td class="mdescLeft">&#160;</td><td class="mdescRight">Perform almanac update. Must be called immediately after gnssDelayUntilSubframe.  <a href="class_l_r11x0.html#a96aa9566399e46fc03f2b73b44058e3f">More...</a><br /></td></tr>
+<tr class="separator:a96aa9566399e46fc03f2b73b44058e3f inherit pub_methods_class_l_r11x0"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a19a4b4a138dbd0e5c8f980de0f6419e4 inherit pub_methods_class_l_r11x0"><td class="memItemLeft" align="right" valign="top">int16_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_l_r11x0.html#a19a4b4a138dbd0e5c8f980de0f6419e4">getGnssPosition</a> (<a class="el" href="struct_l_r11x0_gnss_position__t.html">LR11x0GnssPosition_t</a> *pos, bool filtered=true)</td></tr>
+<tr class="memdesc:a19a4b4a138dbd0e5c8f980de0f6419e4 inherit pub_methods_class_l_r11x0"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get GNSS position. Called after gnssScan to retrieve the position calculated by the internal solver.  <a href="class_l_r11x0.html#a19a4b4a138dbd0e5c8f980de0f6419e4">More...</a><br /></td></tr>
+<tr class="separator:a19a4b4a138dbd0e5c8f980de0f6419e4 inherit pub_methods_class_l_r11x0"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a97a3f23b796257135a9afd33c28e8ed5 inherit pub_methods_class_l_r11x0"><td class="memItemLeft" align="right" valign="top">int16_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_l_r11x0.html#a97a3f23b796257135a9afd33c28e8ed5">getGnssSatellites</a> (<a class="el" href="struct_l_r11x0_gnss_satellite__t.html">LR11x0GnssSatellite_t</a> *sats, uint8_t numSats)</td></tr>
+<tr class="memdesc:a97a3f23b796257135a9afd33c28e8ed5 inherit pub_methods_class_l_r11x0"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get GNSS satellites found during the last scan.  <a href="class_l_r11x0.html#a97a3f23b796257135a9afd33c28e8ed5">More...</a><br /></td></tr>
+<tr class="separator:a97a3f23b796257135a9afd33c28e8ed5 inherit pub_methods_class_l_r11x0"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:afe8684b336a8137cde591283297a869c inherit pub_methods_class_l_r11x0"><td class="memItemLeft" align="right" valign="top">int16_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_l_r11x0.html#afe8684b336a8137cde591283297a869c">getModem</a> (ModemType_t *modem) override</td></tr>
+<tr class="memdesc:afe8684b336a8137cde591283297a869c inherit pub_methods_class_l_r11x0"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get modem currently in use by the radio.  <a href="class_l_r11x0.html#afe8684b336a8137cde591283297a869c">More...</a><br /></td></tr>
+<tr class="separator:afe8684b336a8137cde591283297a869c inherit pub_methods_class_l_r11x0"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:adc8fbcfff7cd3b801dcee22e87bc2598 inherit pub_methods_class_l_r11x0"><td class="memItemLeft" align="right" valign="top">int16_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_l_r11x0.html#adc8fbcfff7cd3b801dcee22e87bc2598">calibrateImageRejection</a> (float freqMin, float freqMax)</td></tr>
+<tr class="memdesc:adc8fbcfff7cd3b801dcee22e87bc2598 inherit pub_methods_class_l_r11x0"><td class="mdescLeft">&#160;</td><td class="mdescRight">Perform image rejection calibration for the specified frequency band. WARNING: Use at your own risk! Setting incorrect values may lead to decreased performance.  <a href="class_l_r11x0.html#adc8fbcfff7cd3b801dcee22e87bc2598">More...</a><br /></td></tr>
+<tr class="separator:adc8fbcfff7cd3b801dcee22e87bc2598 inherit pub_methods_class_l_r11x0"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a492b2d057dd803c3884fa1adc8e22534 inherit pub_methods_class_l_r11x0"><td class="memItemLeft" align="right" valign="top">int16_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_l_r11x0.html#a492b2d057dd803c3884fa1adc8e22534">transmit</a> (const char *str, uint8_t addr=0)</td></tr>
 <tr class="memdesc:a492b2d057dd803c3884fa1adc8e22534 inherit pub_methods_class_l_r11x0"><td class="mdescLeft">&#160;</td><td class="mdescRight">C-string transmit method.  <a href="class_l_r11x0.html#a492b2d057dd803c3884fa1adc8e22534">More...</a><br /></td></tr>
 <tr class="separator:a492b2d057dd803c3884fa1adc8e22534 inherit pub_methods_class_l_r11x0"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -425,6 +455,18 @@ void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="clas
 <tr class="memitem:a977e5236693960bb1c79090a201e9e1c inherit pub_methods_class_physical_layer"><td class="memItemLeft" align="right" valign="top">float&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_physical_layer.html#a977e5236693960bb1c79090a201e9e1c">getFreqStep</a> () const</td></tr>
 <tr class="memdesc:a977e5236693960bb1c79090a201e9e1c inherit pub_methods_class_physical_layer"><td class="mdescLeft">&#160;</td><td class="mdescRight">Gets the module frequency step size that was set in constructor.  <a href="class_physical_layer.html#a977e5236693960bb1c79090a201e9e1c">More...</a><br /></td></tr>
 <tr class="separator:a977e5236693960bb1c79090a201e9e1c inherit pub_methods_class_physical_layer"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae602ebd46d60da8670c9f353cef695d9 inherit pub_methods_class_physical_layer"><td class="memItemLeft" align="right" valign="top">uint32_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_physical_layer.html#ae602ebd46d60da8670c9f353cef695d9">getIrqMapped</a> (<a class="el" href="group__typedefs.html#gafaf66becf1112a55ba8ad7402b802b77">RadioLibIrqFlags_t</a> irq)</td></tr>
+<tr class="memdesc:ae602ebd46d60da8670c9f353cef695d9 inherit pub_methods_class_physical_layer"><td class="mdescLeft">&#160;</td><td class="mdescRight">Convert from radio-agnostic IRQ flags to radio-specific flags.  <a href="class_physical_layer.html#ae602ebd46d60da8670c9f353cef695d9">More...</a><br /></td></tr>
+<tr class="separator:ae602ebd46d60da8670c9f353cef695d9 inherit pub_methods_class_physical_layer"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2c7dd4704e3df353265010710bd26e83 inherit pub_methods_class_physical_layer"><td class="memItemLeft" align="right" valign="top">int16_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_physical_layer.html#a2c7dd4704e3df353265010710bd26e83">checkIrq</a> (RadioLibIrqType_t irq)</td></tr>
+<tr class="memdesc:a2c7dd4704e3df353265010710bd26e83 inherit pub_methods_class_physical_layer"><td class="mdescLeft">&#160;</td><td class="mdescRight">Check whether a specific IRQ bit is set (e.g. RxTimeout, CadDone).  <a href="class_physical_layer.html#a2c7dd4704e3df353265010710bd26e83">More...</a><br /></td></tr>
+<tr class="separator:a2c7dd4704e3df353265010710bd26e83 inherit pub_methods_class_physical_layer"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8564f9834a0247e93e7620c23559ceb8 inherit pub_methods_class_physical_layer"><td class="memItemLeft" align="right" valign="top">int16_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_physical_layer.html#a8564f9834a0247e93e7620c23559ceb8">setIrq</a> (<a class="el" href="group__typedefs.html#gafaf66becf1112a55ba8ad7402b802b77">RadioLibIrqFlags_t</a> irq)</td></tr>
+<tr class="memdesc:a8564f9834a0247e93e7620c23559ceb8 inherit pub_methods_class_physical_layer"><td class="mdescLeft">&#160;</td><td class="mdescRight">Set interrupt on specific IRQ bit(s) (e.g. RxTimeout, CadDone). Keep in mind that not all radio modules support all RADIOLIB_IRQ_ flags!  <a href="class_physical_layer.html#a8564f9834a0247e93e7620c23559ceb8">More...</a><br /></td></tr>
+<tr class="separator:a8564f9834a0247e93e7620c23559ceb8 inherit pub_methods_class_physical_layer"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af9a7e739e39705a72ffa8b63ec09bb15 inherit pub_methods_class_physical_layer"><td class="memItemLeft" align="right" valign="top">int16_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_physical_layer.html#af9a7e739e39705a72ffa8b63ec09bb15">clearIrq</a> (<a class="el" href="group__typedefs.html#gafaf66becf1112a55ba8ad7402b802b77">RadioLibIrqFlags_t</a> irq)</td></tr>
+<tr class="memdesc:af9a7e739e39705a72ffa8b63ec09bb15 inherit pub_methods_class_physical_layer"><td class="mdescLeft">&#160;</td><td class="mdescRight">Clear interrupt on a specific IRQ bit (e.g. RxTimeout, CadDone). Keep in mind that not all radio modules support all RADIOLIB_IRQ_ flags!  <a href="class_physical_layer.html#af9a7e739e39705a72ffa8b63ec09bb15">More...</a><br /></td></tr>
+<tr class="separator:af9a7e739e39705a72ffa8b63ec09bb15 inherit pub_methods_class_physical_layer"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:acd9171bd71aa80fb86113b612c42de53 inherit pub_methods_class_physical_layer"><td class="memItemLeft" align="right" valign="top">int32_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_physical_layer.html#acd9171bd71aa80fb86113b612c42de53">random</a> (int32_t max)</td></tr>
 <tr class="memdesc:acd9171bd71aa80fb86113b612c42de53 inherit pub_methods_class_physical_layer"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get truly random number in range 0 - max.  <a href="class_physical_layer.html#acd9171bd71aa80fb86113b612c42de53">More...</a><br /></td></tr>
 <tr class="separator:acd9171bd71aa80fb86113b612c42de53 inherit pub_methods_class_physical_layer"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -670,8 +712,8 @@ bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="clas
 
 </div>
 </div>
-<a id="a9439d6d7a6c8dc5813a00c9e493810c0"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a9439d6d7a6c8dc5813a00c9e493810c0">&#9670;&nbsp;</a></span>beginLRFHSS()</h2>
+<a id="acc15335d41446254c3b9a87572080388"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#acc15335d41446254c3b9a87572080388">&#9670;&nbsp;</a></span>beginLRFHSS()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -693,6 +735,12 @@ bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="clas
           <td></td>
           <td class="paramtype">uint8_t&#160;</td>
           <td class="paramname"><em>cr</em> = <code>RADIOLIB_LR11X0_LR_FHSS_CR_2_3</code>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">bool&#160;</td>
+          <td class="paramname"><em>narrowGrid</em> = <code>true</code>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
@@ -720,6 +768,7 @@ bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="clas
     <tr><td class="paramname">freq</td><td>Carrier frequency in MHz. Defaults to 434.0 MHz. </td></tr>
     <tr><td class="paramname">bw</td><td>LR-FHSS bandwidth, one of RADIOLIB_LR11X0_LR_FHSS_BW_* values. Defaults to 722.66 kHz. </td></tr>
     <tr><td class="paramname">cr</td><td>LR-FHSS coding rate, one of RADIOLIB_LR11X0_LR_FHSS_CR_* values. Defaults to 2/3 coding rate. </td></tr>
+    <tr><td class="paramname">narrowGrid</td><td>Whether to use narrow (3.9 kHz) or wide (25.39 kHz) grid spacing. Defaults to true (narrow/non-FCC) grid. </td></tr>
     <tr><td class="paramname">power</td><td>Output power in dBm. Defaults to 10 dBm. </td></tr>
     <tr><td class="paramname">tcxoVoltage</td><td>TCXO reference voltage to be set. Defaults to 1.6 V. If you are seeing -706/-707 error codes, it likely means you are using non-0 value for module with XTAL. To use XTAL, either set this value to 0, or set <a class="el" href="class_l_r11x0.html#a3ccfd35d26960457214d2a0192d6b312" title="Whether the module has an XTAL (true) or TCXO (false). Defaults to false.">LR11x0::XTAL</a> to true. </td></tr>
   </table>
@@ -846,7 +895,7 @@ bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="clas
 </table>
 </div><div class="memdoc">
 
-<p>Sets carrier frequency. Allowed values are in range from 150.0 to 960.0 MHz. Will also perform calibrations. </p>
+<p>Sets carrier frequency. Allowed values are in range from 150.0 to 960.0 MHz. Will automatically perform image calibration if the frequency changes by more than RADIOLIB_LR11X0_CAL_IMG_FREQ_TRIG MHz. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">freq</td><td>Carrier frequency to be set in MHz. </td></tr>
@@ -859,8 +908,8 @@ bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="clas
 
 </div>
 </div>
-<a id="a08c9ba9d02e7e3918f73f090c6d5ed33"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a08c9ba9d02e7e3918f73f090c6d5ed33">&#9670;&nbsp;</a></span>setFrequency() <span class="overload">[2/2]</span></h2>
+<a id="a4f9272d078b79d76315be7a57be3e547"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a4f9272d078b79d76315be7a57be3e547">&#9670;&nbsp;</a></span>setFrequency() <span class="overload">[2/2]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -875,7 +924,7 @@ bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="clas
           <td class="paramkey"></td>
           <td></td>
           <td class="paramtype">bool&#160;</td>
-          <td class="paramname"><em>calibrate</em>, </td>
+          <td class="paramname"><em>skipCalibration</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
@@ -891,16 +940,53 @@ bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="clas
       </table>
 </div><div class="memdoc">
 
-<p>Sets carrier frequency. Allowed values are in range from 150.0 to 960.0 MHz. </p>
+<p>Sets carrier frequency. Allowed values are in range from 150.0 to 960.0 MHz. Will automatically perform image calibration if the frequency changes by more than RADIOLIB_LR11X0_CAL_IMG_FREQ_TRIG MHz. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">freq</td><td>Carrier frequency to be set in MHz. </td></tr>
-    <tr><td class="paramname">calibrate</td><td>Run image calibration. </td></tr>
+    <tr><td class="paramname">skipCalibration</td><td>Skip automated image calibration. </td></tr>
     <tr><td class="paramname">band</td><td>Half bandwidth for image calibration. For example, if carrier is 434 MHz and band is set to 4 MHz, then the image will be calibrate for band 430 - 438 MHz. Unused if calibrate is set to false, defaults to 4 MHz </td></tr>
   </table>
   </dd>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd><a class="el" href="group__status__codes.html">Status Codes</a> </dd></dl>
+
+</div>
+</div>
+<a id="a18f525740237b023056a8ca6f3671c6a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a18f525740237b023056a8ca6f3671c6a">&#9670;&nbsp;</a></span>setModem()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">int16_t LR1110::setModem </td>
+          <td>(</td>
+          <td class="paramtype">ModemType_t&#160;</td>
+          <td class="paramname"><em>modem</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">override</span><span class="mlabel">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Set modem for the radio to use. Will perform full reset and reconfigure the radio using its default parameters. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">modem</td><td>Modem type to set - FSK, LoRa or LR-FHSS. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd><a class="el" href="group__status__codes.html">Status Codes</a> </dd></dl>
+
+<p>Reimplemented from <a class="el" href="class_physical_layer.html#a77415bf4ed34be18c92c0cf4b2de7149">PhysicalLayer</a>.</p>
 
 </div>
 </div>

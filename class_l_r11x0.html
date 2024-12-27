@@ -131,15 +131,18 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:a562f34a054e3374b812556df3b6eb421"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_l_r11x0.html#a562f34a054e3374b812556df3b6eb421">LR11x0</a> (<a class="el" href="class_module.html">Module</a> *mod)</td></tr>
 <tr class="memdesc:a562f34a054e3374b812556df3b6eb421"><td class="mdescLeft">&#160;</td><td class="mdescRight">Default constructor.  <a href="class_l_r11x0.html#a562f34a054e3374b812556df3b6eb421">More...</a><br /></td></tr>
 <tr class="separator:a562f34a054e3374b812556df3b6eb421"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a8dc6468762c36c30e9af262014e17942"><td class="memItemLeft" align="right" valign="top">int16_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_l_r11x0.html#a8dc6468762c36c30e9af262014e17942">begin</a> (float bw, uint8_t sf, uint8_t cr, uint8_t syncWord, uint16_t preambleLength, float tcxoVoltage)</td></tr>
-<tr class="memdesc:a8dc6468762c36c30e9af262014e17942"><td class="mdescLeft">&#160;</td><td class="mdescRight">Initialization method for LoRa modem.  <a href="class_l_r11x0.html#a8dc6468762c36c30e9af262014e17942">More...</a><br /></td></tr>
-<tr class="separator:a8dc6468762c36c30e9af262014e17942"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa2b69f68ff6171b11a1141c8615240fd"><td class="memItemLeft" align="right" valign="top">int16_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_l_r11x0.html#aa2b69f68ff6171b11a1141c8615240fd">begin</a> (float bw, uint8_t sf, uint8_t cr, uint8_t syncWord, uint16_t preambleLength, float tcxoVoltage, bool high=false)</td></tr>
+<tr class="memdesc:aa2b69f68ff6171b11a1141c8615240fd"><td class="mdescLeft">&#160;</td><td class="mdescRight">Initialization method for LoRa modem.  <a href="class_l_r11x0.html#aa2b69f68ff6171b11a1141c8615240fd">More...</a><br /></td></tr>
+<tr class="separator:aa2b69f68ff6171b11a1141c8615240fd"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:abcc4c776d1a09bb002226ac95574766d"><td class="memItemLeft" align="right" valign="top">int16_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_l_r11x0.html#abcc4c776d1a09bb002226ac95574766d">beginGFSK</a> (float br, float freqDev, float rxBw, uint16_t preambleLength, float tcxoVoltage)</td></tr>
 <tr class="memdesc:abcc4c776d1a09bb002226ac95574766d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Initialization method for FSK modem.  <a href="class_l_r11x0.html#abcc4c776d1a09bb002226ac95574766d">More...</a><br /></td></tr>
 <tr class="separator:abcc4c776d1a09bb002226ac95574766d"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a858b08fd0e7b00baf3056d32dfabb87e"><td class="memItemLeft" align="right" valign="top">int16_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_l_r11x0.html#a858b08fd0e7b00baf3056d32dfabb87e">beginLRFHSS</a> (uint8_t bw, uint8_t cr, float tcxoVoltage)</td></tr>
-<tr class="memdesc:a858b08fd0e7b00baf3056d32dfabb87e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Initialization method for LR-FHSS modem.  <a href="class_l_r11x0.html#a858b08fd0e7b00baf3056d32dfabb87e">More...</a><br /></td></tr>
-<tr class="separator:a858b08fd0e7b00baf3056d32dfabb87e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a244ee48075d44c7064b454eb9c4afdb8"><td class="memItemLeft" align="right" valign="top">int16_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_l_r11x0.html#a244ee48075d44c7064b454eb9c4afdb8">beginLRFHSS</a> (uint8_t bw, uint8_t cr, bool narrowGrid, float tcxoVoltage)</td></tr>
+<tr class="memdesc:a244ee48075d44c7064b454eb9c4afdb8"><td class="mdescLeft">&#160;</td><td class="mdescRight">Initialization method for LR-FHSS modem.  <a href="class_l_r11x0.html#a244ee48075d44c7064b454eb9c4afdb8">More...</a><br /></td></tr>
+<tr class="separator:a244ee48075d44c7064b454eb9c4afdb8"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad7f31060cbab41ad53ee6fa7126cd17b"><td class="memItemLeft" align="right" valign="top">int16_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_l_r11x0.html#ad7f31060cbab41ad53ee6fa7126cd17b">beginGNSS</a> (uint8_t constellations=RADIOLIB_LR11X0_GNSS_CONSTELLATION_GPS|RADIOLIB_LR11X0_GNSS_CONSTELLATION_BEIDOU, float tcxoVoltage=1.6)</td></tr>
+<tr class="memdesc:ad7f31060cbab41ad53ee6fa7126cd17b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Initialization method for GNSS scanning.  <a href="class_l_r11x0.html#ad7f31060cbab41ad53ee6fa7126cd17b">More...</a><br /></td></tr>
+<tr class="separator:ad7f31060cbab41ad53ee6fa7126cd17b"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a288bcc309d3676bc0bbe620b7d89d994"><td class="memItemLeft" align="right" valign="top">int16_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_l_r11x0.html#a288bcc309d3676bc0bbe620b7d89d994">reset</a> ()</td></tr>
 <tr class="memdesc:a288bcc309d3676bc0bbe620b7d89d994"><td class="mdescLeft">&#160;</td><td class="mdescRight">Reset method. Will reset the chip to the default state using RST pin.  <a href="class_l_r11x0.html#a288bcc309d3676bc0bbe620b7d89d994">More...</a><br /></td></tr>
 <tr class="separator:a288bcc309d3676bc0bbe620b7d89d994"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -158,9 +161,9 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:a6a3034c91f5bce70c853ab1620725b3c"><td class="memItemLeft" align="right" valign="top">int16_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_l_r11x0.html#a6a3034c91f5bce70c853ab1620725b3c">scanChannel</a> () override</td></tr>
 <tr class="memdesc:a6a3034c91f5bce70c853ab1620725b3c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Performs scan for LoRa transmission in the current channel. Detects both preamble and payload.  <a href="class_l_r11x0.html#a6a3034c91f5bce70c853ab1620725b3c">More...</a><br /></td></tr>
 <tr class="separator:a6a3034c91f5bce70c853ab1620725b3c"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a99ece57e55ee0001671165213b409a44"><td class="memItemLeft" align="right" valign="top">int16_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_l_r11x0.html#a99ece57e55ee0001671165213b409a44">scanChannel</a> (uint8_t symbolNum, uint8_t detPeak, uint8_t detMin)</td></tr>
-<tr class="memdesc:a99ece57e55ee0001671165213b409a44"><td class="mdescLeft">&#160;</td><td class="mdescRight">Performs scan for LoRa transmission in the current channel. Detects both preamble and payload.  <a href="class_l_r11x0.html#a99ece57e55ee0001671165213b409a44">More...</a><br /></td></tr>
-<tr class="separator:a99ece57e55ee0001671165213b409a44"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5e8f21878bdab1439805aea1e9da168d"><td class="memItemLeft" align="right" valign="top">int16_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_l_r11x0.html#a5e8f21878bdab1439805aea1e9da168d">scanChannel</a> (const <a class="el" href="union_channel_scan_config__t.html">ChannelScanConfig_t</a> &amp;config) override</td></tr>
+<tr class="memdesc:a5e8f21878bdab1439805aea1e9da168d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Performs scan for LoRa transmission in the current channel. Detects both preamble and payload.  <a href="class_l_r11x0.html#a5e8f21878bdab1439805aea1e9da168d">More...</a><br /></td></tr>
+<tr class="separator:a5e8f21878bdab1439805aea1e9da168d"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a74c3f3f8409f1fd0f41347b7d3c7dc24"><td class="memItemLeft" align="right" valign="top">int16_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_l_r11x0.html#a74c3f3f8409f1fd0f41347b7d3c7dc24">standby</a> () override</td></tr>
 <tr class="memdesc:a74c3f3f8409f1fd0f41347b7d3c7dc24"><td class="mdescLeft">&#160;</td><td class="mdescRight">Sets the module to standby mode (overload for <a class="el" href="class_physical_layer.html" title="Provides common interface for protocols that run on LoRa/FSK modules, such as RTTY or LoRaWAN....">PhysicalLayer</a> compatibility, uses 13 MHz RC oscillator).  <a href="class_l_r11x0.html#a74c3f3f8409f1fd0f41347b7d3c7dc24">More...</a><br /></td></tr>
 <tr class="separator:a74c3f3f8409f1fd0f41347b7d3c7dc24"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -215,24 +218,24 @@ void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="clas
 <tr class="memitem:a4f3bc362530b85dd643669705f03998d"><td class="memItemLeft" align="right" valign="top">int16_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_l_r11x0.html#a4f3bc362530b85dd643669705f03998d">startChannelScan</a> () override</td></tr>
 <tr class="memdesc:a4f3bc362530b85dd643669705f03998d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Interrupt-driven channel activity detection method. IRQ1 will be activated when LoRa preamble is detected, or upon timeout. Defaults to CAD parameter values recommended by AN1200.48.  <a href="class_l_r11x0.html#a4f3bc362530b85dd643669705f03998d">More...</a><br /></td></tr>
 <tr class="separator:a4f3bc362530b85dd643669705f03998d"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aa09eb53b0c32a5f229e14c46bfe45a4f"><td class="memItemLeft" align="right" valign="top">int16_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_l_r11x0.html#aa09eb53b0c32a5f229e14c46bfe45a4f">startChannelScan</a> (uint8_t symbolNum, uint8_t detPeak, uint8_t detMin)</td></tr>
-<tr class="memdesc:aa09eb53b0c32a5f229e14c46bfe45a4f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Interrupt-driven channel activity detection method. IRQ1 will be activated when LoRa preamble is detected, or upon timeout.  <a href="class_l_r11x0.html#aa09eb53b0c32a5f229e14c46bfe45a4f">More...</a><br /></td></tr>
-<tr class="separator:aa09eb53b0c32a5f229e14c46bfe45a4f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab073ade3f6b9bbb383e388904812f575"><td class="memItemLeft" align="right" valign="top">int16_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_l_r11x0.html#ab073ade3f6b9bbb383e388904812f575">startChannelScan</a> (const <a class="el" href="union_channel_scan_config__t.html">ChannelScanConfig_t</a> &amp;config) override</td></tr>
+<tr class="memdesc:ab073ade3f6b9bbb383e388904812f575"><td class="mdescLeft">&#160;</td><td class="mdescRight">Interrupt-driven channel activity detection method. IRQ pin will be activated when LoRa preamble is detected, or upon timeout.  <a href="class_l_r11x0.html#ab073ade3f6b9bbb383e388904812f575">More...</a><br /></td></tr>
+<tr class="separator:ab073ade3f6b9bbb383e388904812f575"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a1ae2cddeb7671d9b71e9c83bf020820f"><td class="memItemLeft" align="right" valign="top">int16_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_l_r11x0.html#a1ae2cddeb7671d9b71e9c83bf020820f">getChannelScanResult</a> () override</td></tr>
 <tr class="memdesc:a1ae2cddeb7671d9b71e9c83bf020820f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Read the channel scan result.  <a href="class_l_r11x0.html#a1ae2cddeb7671d9b71e9c83bf020820f">More...</a><br /></td></tr>
 <tr class="separator:a1ae2cddeb7671d9b71e9c83bf020820f"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:abf961ec7d93feb6472f26b7b976ee0c9"><td class="memItemLeft" align="right" valign="top">int16_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_l_r11x0.html#abf961ec7d93feb6472f26b7b976ee0c9">setBandwidth</a> (float bw)</td></tr>
-<tr class="memdesc:abf961ec7d93feb6472f26b7b976ee0c9"><td class="mdescLeft">&#160;</td><td class="mdescRight">Sets LoRa bandwidth. Allowed values are 62.5, 125.0, 250.0 and 500.0 kHz.  <a href="class_l_r11x0.html#abf961ec7d93feb6472f26b7b976ee0c9">More...</a><br /></td></tr>
-<tr class="separator:abf961ec7d93feb6472f26b7b976ee0c9"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a70d9849eb8e5ce2090e4e332252753d7"><td class="memItemLeft" align="right" valign="top">int16_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_l_r11x0.html#a70d9849eb8e5ce2090e4e332252753d7">setBandwidth</a> (float bw, bool high=false)</td></tr>
+<tr class="memdesc:a70d9849eb8e5ce2090e4e332252753d7"><td class="mdescLeft">&#160;</td><td class="mdescRight">Sets LoRa bandwidth. Allowed values are 62.5, 125.0, 250.0 and 500.0 kHz. (default, high = false)  <a href="class_l_r11x0.html#a70d9849eb8e5ce2090e4e332252753d7">More...</a><br /></td></tr>
+<tr class="separator:a70d9849eb8e5ce2090e4e332252753d7"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:adf6895cbf7af7e00ea06c5b2b5040cb4"><td class="memItemLeft" align="right" valign="top">int16_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_l_r11x0.html#adf6895cbf7af7e00ea06c5b2b5040cb4">setSpreadingFactor</a> (uint8_t sf, bool legacy=false)</td></tr>
 <tr class="memdesc:adf6895cbf7af7e00ea06c5b2b5040cb4"><td class="mdescLeft">&#160;</td><td class="mdescRight">Sets LoRa spreading factor. Allowed values range from 5 to 12.  <a href="class_l_r11x0.html#adf6895cbf7af7e00ea06c5b2b5040cb4">More...</a><br /></td></tr>
 <tr class="separator:adf6895cbf7af7e00ea06c5b2b5040cb4"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a583f2d5ed601a98c609dbf0d57f2f541"><td class="memItemLeft" align="right" valign="top">int16_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_l_r11x0.html#a583f2d5ed601a98c609dbf0d57f2f541">setCodingRate</a> (uint8_t cr, bool longInterleave=false)</td></tr>
 <tr class="memdesc:a583f2d5ed601a98c609dbf0d57f2f541"><td class="mdescLeft">&#160;</td><td class="mdescRight">Sets LoRa coding rate denominator. Allowed values range from 5 to 8.  <a href="class_l_r11x0.html#a583f2d5ed601a98c609dbf0d57f2f541">More...</a><br /></td></tr>
 <tr class="separator:a583f2d5ed601a98c609dbf0d57f2f541"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a7ffa48f1b6aaaa3f48e4b51f8ada59d8"><td class="memItemLeft" align="right" valign="top">int16_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_l_r11x0.html#a7ffa48f1b6aaaa3f48e4b51f8ada59d8">setSyncWord</a> (uint32_t syncWord)</td></tr>
-<tr class="memdesc:a7ffa48f1b6aaaa3f48e4b51f8ada59d8"><td class="mdescLeft">&#160;</td><td class="mdescRight">Sets LoRa or LR-FHSS sync word.  <a href="class_l_r11x0.html#a7ffa48f1b6aaaa3f48e4b51f8ada59d8">More...</a><br /></td></tr>
-<tr class="separator:a7ffa48f1b6aaaa3f48e4b51f8ada59d8"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aee7dbdbd76f4639395af4a0db17025a7"><td class="memItemLeft" align="right" valign="top">int16_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_l_r11x0.html#aee7dbdbd76f4639395af4a0db17025a7">setSyncWord</a> (uint8_t syncWord)</td></tr>
+<tr class="memdesc:aee7dbdbd76f4639395af4a0db17025a7"><td class="mdescLeft">&#160;</td><td class="mdescRight">Sets LoRa sync word.  <a href="class_l_r11x0.html#aee7dbdbd76f4639395af4a0db17025a7">More...</a><br /></td></tr>
+<tr class="separator:aee7dbdbd76f4639395af4a0db17025a7"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ab1954e4733a7fbea4129d9a2de2285d9"><td class="memItemLeft" align="right" valign="top">int16_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_l_r11x0.html#ab1954e4733a7fbea4129d9a2de2285d9">setBitRate</a> (float br) override</td></tr>
 <tr class="memdesc:ab1954e4733a7fbea4129d9a2de2285d9"><td class="mdescLeft">&#160;</td><td class="mdescRight">Sets GFSK bit rate. Allowed values range from 0.6 to 300.0 kbps.  <a href="class_l_r11x0.html#ab1954e4733a7fbea4129d9a2de2285d9">More...</a><br /></td></tr>
 <tr class="separator:ab1954e4733a7fbea4129d9a2de2285d9"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -311,12 +314,15 @@ void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="clas
 <tr class="memitem:a260c7f4ee4739e532ddb465a276205d3"><td class="memItemLeft" align="right" valign="top"><a class="el" href="group__typedefs.html#ga210f31dd2bff7fb80563275648a5bbbd">RadioLibTime_t</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_l_r11x0.html#a260c7f4ee4739e532ddb465a276205d3">calculateRxTimeout</a> (<a class="el" href="group__typedefs.html#ga210f31dd2bff7fb80563275648a5bbbd">RadioLibTime_t</a> timeoutUs) override</td></tr>
 <tr class="memdesc:a260c7f4ee4739e532ddb465a276205d3"><td class="mdescLeft">&#160;</td><td class="mdescRight">Calculate the timeout value for this specific module / series (in number of symbols or units of time)  <a href="class_l_r11x0.html#a260c7f4ee4739e532ddb465a276205d3">More...</a><br /></td></tr>
 <tr class="separator:a260c7f4ee4739e532ddb465a276205d3"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:af441859fbeed4ee5d32519d26e94c68b"><td class="memItemLeft" align="right" valign="top">int16_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_l_r11x0.html#af441859fbeed4ee5d32519d26e94c68b">irqRxDoneRxTimeout</a> (uint32_t &amp;irqFlags, uint32_t &amp;irqMask) override</td></tr>
-<tr class="memdesc:af441859fbeed4ee5d32519d26e94c68b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Create the flags that make up RxDone and RxTimeout used for receiving downlinks.  <a href="class_l_r11x0.html#af441859fbeed4ee5d32519d26e94c68b">More...</a><br /></td></tr>
-<tr class="separator:af441859fbeed4ee5d32519d26e94c68b"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a8d3e5877dcd784c8e922f32ff773dc61"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_l_r11x0.html#a8d3e5877dcd784c8e922f32ff773dc61">isRxTimeout</a> () override</td></tr>
-<tr class="memdesc:a8d3e5877dcd784c8e922f32ff773dc61"><td class="mdescLeft">&#160;</td><td class="mdescRight">Check whether the IRQ bit for RxTimeout is set.  <a href="class_l_r11x0.html#a8d3e5877dcd784c8e922f32ff773dc61">More...</a><br /></td></tr>
-<tr class="separator:a8d3e5877dcd784c8e922f32ff773dc61"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a205364e65d54f3f87b9b8f5972cdcb99"><td class="memItemLeft" align="right" valign="top">uint32_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_l_r11x0.html#a205364e65d54f3f87b9b8f5972cdcb99">getIrqFlags</a> () override</td></tr>
+<tr class="memdesc:a205364e65d54f3f87b9b8f5972cdcb99"><td class="mdescLeft">&#160;</td><td class="mdescRight">Read currently active IRQ flags.  <a href="class_l_r11x0.html#a205364e65d54f3f87b9b8f5972cdcb99">More...</a><br /></td></tr>
+<tr class="separator:a205364e65d54f3f87b9b8f5972cdcb99"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a62c715ab18ea8a2e08a2791d3e764ee9"><td class="memItemLeft" align="right" valign="top">int16_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_l_r11x0.html#a62c715ab18ea8a2e08a2791d3e764ee9">setIrqFlags</a> (uint32_t irq) override</td></tr>
+<tr class="memdesc:a62c715ab18ea8a2e08a2791d3e764ee9"><td class="mdescLeft">&#160;</td><td class="mdescRight">Set interrupt on IRQ pin to be sent on a specific IRQ bit (e.g. RxTimeout, CadDone).  <a href="class_l_r11x0.html#a62c715ab18ea8a2e08a2791d3e764ee9">More...</a><br /></td></tr>
+<tr class="separator:a62c715ab18ea8a2e08a2791d3e764ee9"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa524b0be7b8d125c24319072d6178e74"><td class="memItemLeft" align="right" valign="top">int16_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_l_r11x0.html#aa524b0be7b8d125c24319072d6178e74">clearIrqFlags</a> (uint32_t irq) override</td></tr>
+<tr class="memdesc:aa524b0be7b8d125c24319072d6178e74"><td class="mdescLeft">&#160;</td><td class="mdescRight">Clear interrupt on a specific IRQ bit (e.g. RxTimeout, CadDone).  <a href="class_l_r11x0.html#aa524b0be7b8d125c24319072d6178e74">More...</a><br /></td></tr>
+<tr class="separator:aa524b0be7b8d125c24319072d6178e74"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a89b16d2231f588b67dc3aab0c0a467f4"><td class="memItemLeft" align="right" valign="top">uint8_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_l_r11x0.html#a89b16d2231f588b67dc3aab0c0a467f4">randomByte</a> () override</td></tr>
 <tr class="memdesc:a89b16d2231f588b67dc3aab0c0a467f4"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get one truly random byte from RSSI noise.  <a href="class_l_r11x0.html#a89b16d2231f588b67dc3aab0c0a467f4">More...</a><br /></td></tr>
 <tr class="separator:a89b16d2231f588b67dc3aab0c0a467f4"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -341,6 +347,12 @@ void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="clas
 <tr class="memitem:a1981f0dfceca2b6175a69530ea13d643"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_l_r11x0.html#a1981f0dfceca2b6175a69530ea13d643">setRfSwitchTable</a> (const uint32_t(&amp;pins)[<a class="el" href="class_module.html#a0c11551e12579bbabf57b19e12555b3c">Module::RFSWITCH_MAX_PINS</a>], const <a class="el" href="struct_module_1_1_rf_switch_mode__t.html">Module::RfSwitchMode_t</a> table[])</td></tr>
 <tr class="memdesc:a1981f0dfceca2b6175a69530ea13d643"><td class="mdescLeft">&#160;</td><td class="mdescRight">Some modules contain external RF switch controlled by pins. This function gives RadioLib control over those pins to automatically switch between various modes.  <a href="class_l_r11x0.html#a1981f0dfceca2b6175a69530ea13d643">More...</a><br /></td></tr>
 <tr class="separator:a1981f0dfceca2b6175a69530ea13d643"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae0a47e772fe24c7b3f3d3288c4cd0941"><td class="memItemLeft" align="right" valign="top">int16_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_l_r11x0.html#ae0a47e772fe24c7b3f3d3288c4cd0941">forceLDRO</a> (bool enable)</td></tr>
+<tr class="memdesc:ae0a47e772fe24c7b3f3d3288c4cd0941"><td class="mdescLeft">&#160;</td><td class="mdescRight">Forces LoRa low data rate optimization. Only available in LoRa mode. After calling this method, LDRO will always be set to the provided value, regardless of symbol length. To re-enable automatic LDRO configuration, call <a class="el" href="class_l_r11x0.html#aa9a8db401189ba0ce5117512b5db6a58" title="Re-enables automatic LDRO configuration. Only available in LoRa mode. After calling this method,...">LR11x0::autoLDRO()</a>  <a href="class_l_r11x0.html#ae0a47e772fe24c7b3f3d3288c4cd0941">More...</a><br /></td></tr>
+<tr class="separator:ae0a47e772fe24c7b3f3d3288c4cd0941"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa9a8db401189ba0ce5117512b5db6a58"><td class="memItemLeft" align="right" valign="top">int16_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_l_r11x0.html#aa9a8db401189ba0ce5117512b5db6a58">autoLDRO</a> ()</td></tr>
+<tr class="memdesc:aa9a8db401189ba0ce5117512b5db6a58"><td class="mdescLeft">&#160;</td><td class="mdescRight">Re-enables automatic LDRO configuration. Only available in LoRa mode. After calling this method, LDRO will be enabled automatically when symbol length exceeds 16 ms.  <a href="class_l_r11x0.html#aa9a8db401189ba0ce5117512b5db6a58">More...</a><br /></td></tr>
+<tr class="separator:aa9a8db401189ba0ce5117512b5db6a58"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a8c1def9a01021a52f5bb82c119a9ad35"><td class="memItemLeft" align="right" valign="top">int16_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_l_r11x0.html#a8c1def9a01021a52f5bb82c119a9ad35">setLrFhssConfig</a> (uint8_t bw, uint8_t cr, uint8_t hdrCount=3, uint16_t hopSeed=0x13A)</td></tr>
 <tr class="memdesc:a8c1def9a01021a52f5bb82c119a9ad35"><td class="mdescLeft">&#160;</td><td class="mdescRight">Sets LR-FHSS configuration.  <a href="class_l_r11x0.html#a8c1def9a01021a52f5bb82c119a9ad35">More...</a><br /></td></tr>
 <tr class="separator:a8c1def9a01021a52f5bb82c119a9ad35"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -370,17 +382,32 @@ void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="clas
 <tr class="memdesc:ab2820cc2b740d6d42a079bbd8bd45b85"><td class="mdescLeft">&#160;</td><td class="mdescRight">Method to upload new firmware image to the device. The device will be automatically erased, a new firmware will be uploaded, written to flash and executed.  <a href="class_l_r11x0.html#ab2820cc2b740d6d42a079bbd8bd45b85">More...</a><br /></td></tr>
 <tr class="separator:ab2820cc2b740d6d42a079bbd8bd45b85"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a79818dae19d69d33a5a1facbb91c3774"><td class="memItemLeft" align="right" valign="top">int16_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_l_r11x0.html#a79818dae19d69d33a5a1facbb91c3774">isGnssScanCapable</a> ()</td></tr>
-<tr class="memdesc:a79818dae19d69d33a5a1facbb91c3774"><td class="mdescLeft">&#160;</td><td class="mdescRight">Method to check whether the device is capable of performing a GNSS scan. CAUTION: Work in progress! Most data is returned via debug prints.  <a href="class_l_r11x0.html#a79818dae19d69d33a5a1facbb91c3774">More...</a><br /></td></tr>
+<tr class="memdesc:a79818dae19d69d33a5a1facbb91c3774"><td class="mdescLeft">&#160;</td><td class="mdescRight">Method to check whether the device is capable of performing a GNSS scan.  <a href="class_l_r11x0.html#a79818dae19d69d33a5a1facbb91c3774">More...</a><br /></td></tr>
 <tr class="separator:a79818dae19d69d33a5a1facbb91c3774"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a9ec306f25f187415aac23906c0a948b1"><td class="memItemLeft" align="right" valign="top">int16_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_l_r11x0.html#a9ec306f25f187415aac23906c0a948b1">gnssScan</a> (uint16_t *resSize)</td></tr>
-<tr class="memdesc:a9ec306f25f187415aac23906c0a948b1"><td class="mdescLeft">&#160;</td><td class="mdescRight">Performs GNSS scan. CAUTION: Work in progress! Most data is returned via debug prints.  <a href="class_l_r11x0.html#a9ec306f25f187415aac23906c0a948b1">More...</a><br /></td></tr>
-<tr class="separator:a9ec306f25f187415aac23906c0a948b1"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a3f5a92e557dd580cb27824246a9049c1"><td class="memItemLeft" align="right" valign="top">int16_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_l_r11x0.html#a3f5a92e557dd580cb27824246a9049c1">getGnssScanResult</a> (uint16_t size)</td></tr>
-<tr class="memdesc:a3f5a92e557dd580cb27824246a9049c1"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get GNSS scan result. CAUTION: Work in progress! Most data is returned via debug prints.  <a href="class_l_r11x0.html#a3f5a92e557dd580cb27824246a9049c1">More...</a><br /></td></tr>
-<tr class="separator:a3f5a92e557dd580cb27824246a9049c1"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a6f02bff4720b5087f2a68834182651df"><td class="memItemLeft" align="right" valign="top">int16_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_l_r11x0.html#a6f02bff4720b5087f2a68834182651df">getGnssPosition</a> (float *lat, float *lon, bool filtered=true)</td></tr>
-<tr class="memdesc:a6f02bff4720b5087f2a68834182651df"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get GNSS position. CAUTION: Work in progress! Most data is returned via debug prints.  <a href="class_l_r11x0.html#a6f02bff4720b5087f2a68834182651df">More...</a><br /></td></tr>
-<tr class="separator:a6f02bff4720b5087f2a68834182651df"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad9bfaf0bdd7045f5d41f18f3f953c294"><td class="memItemLeft" align="right" valign="top">int16_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_l_r11x0.html#ad9bfaf0bdd7045f5d41f18f3f953c294">gnssScan</a> (<a class="el" href="struct_l_r11x0_gnss_result__t.html">LR11x0GnssResult_t</a> *res=NULL)</td></tr>
+<tr class="memdesc:ad9bfaf0bdd7045f5d41f18f3f953c294"><td class="mdescLeft">&#160;</td><td class="mdescRight">Performs GNSS scan.  <a href="class_l_r11x0.html#ad9bfaf0bdd7045f5d41f18f3f953c294">More...</a><br /></td></tr>
+<tr class="separator:ad9bfaf0bdd7045f5d41f18f3f953c294"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a748d30cb7a0b419066f6361a966b306f"><td class="memItemLeft" align="right" valign="top">int16_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_l_r11x0.html#a748d30cb7a0b419066f6361a966b306f">getGnssAlmanacStatus</a> (<a class="el" href="struct_l_r11x0_gnss_almanac_status__t.html">LR11x0GnssAlmanacStatus_t</a> *stat)</td></tr>
+<tr class="memdesc:a748d30cb7a0b419066f6361a966b306f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Read information about the almanac.  <a href="class_l_r11x0.html#a748d30cb7a0b419066f6361a966b306f">More...</a><br /></td></tr>
+<tr class="separator:a748d30cb7a0b419066f6361a966b306f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab2dbab0fe3433e914c19a8d03fe32358"><td class="memItemLeft" align="right" valign="top">int16_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_l_r11x0.html#ab2dbab0fe3433e914c19a8d03fe32358">gnssDelayUntilSubframe</a> (<a class="el" href="struct_l_r11x0_gnss_almanac_status__t.html">LR11x0GnssAlmanacStatus_t</a> *stat, uint8_t constellation)</td></tr>
+<tr class="memdesc:ab2dbab0fe3433e914c19a8d03fe32358"><td class="mdescLeft">&#160;</td><td class="mdescRight">Blocking wait until the next subframe with almanac data is available. Used to control timing during almanac update from satellite.  <a href="class_l_r11x0.html#ab2dbab0fe3433e914c19a8d03fe32358">More...</a><br /></td></tr>
+<tr class="separator:ab2dbab0fe3433e914c19a8d03fe32358"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a96aa9566399e46fc03f2b73b44058e3f"><td class="memItemLeft" align="right" valign="top">int16_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_l_r11x0.html#a96aa9566399e46fc03f2b73b44058e3f">updateGnssAlmanac</a> (uint8_t constellation)</td></tr>
+<tr class="memdesc:a96aa9566399e46fc03f2b73b44058e3f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Perform almanac update. Must be called immediately after gnssDelayUntilSubframe.  <a href="class_l_r11x0.html#a96aa9566399e46fc03f2b73b44058e3f">More...</a><br /></td></tr>
+<tr class="separator:a96aa9566399e46fc03f2b73b44058e3f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a19a4b4a138dbd0e5c8f980de0f6419e4"><td class="memItemLeft" align="right" valign="top">int16_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_l_r11x0.html#a19a4b4a138dbd0e5c8f980de0f6419e4">getGnssPosition</a> (<a class="el" href="struct_l_r11x0_gnss_position__t.html">LR11x0GnssPosition_t</a> *pos, bool filtered=true)</td></tr>
+<tr class="memdesc:a19a4b4a138dbd0e5c8f980de0f6419e4"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get GNSS position. Called after gnssScan to retrieve the position calculated by the internal solver.  <a href="class_l_r11x0.html#a19a4b4a138dbd0e5c8f980de0f6419e4">More...</a><br /></td></tr>
+<tr class="separator:a19a4b4a138dbd0e5c8f980de0f6419e4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a97a3f23b796257135a9afd33c28e8ed5"><td class="memItemLeft" align="right" valign="top">int16_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_l_r11x0.html#a97a3f23b796257135a9afd33c28e8ed5">getGnssSatellites</a> (<a class="el" href="struct_l_r11x0_gnss_satellite__t.html">LR11x0GnssSatellite_t</a> *sats, uint8_t numSats)</td></tr>
+<tr class="memdesc:a97a3f23b796257135a9afd33c28e8ed5"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get GNSS satellites found during the last scan.  <a href="class_l_r11x0.html#a97a3f23b796257135a9afd33c28e8ed5">More...</a><br /></td></tr>
+<tr class="separator:a97a3f23b796257135a9afd33c28e8ed5"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:afe8684b336a8137cde591283297a869c"><td class="memItemLeft" align="right" valign="top">int16_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_l_r11x0.html#afe8684b336a8137cde591283297a869c">getModem</a> (ModemType_t *modem) override</td></tr>
+<tr class="memdesc:afe8684b336a8137cde591283297a869c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get modem currently in use by the radio.  <a href="class_l_r11x0.html#afe8684b336a8137cde591283297a869c">More...</a><br /></td></tr>
+<tr class="separator:afe8684b336a8137cde591283297a869c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:adc8fbcfff7cd3b801dcee22e87bc2598"><td class="memItemLeft" align="right" valign="top">int16_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_l_r11x0.html#adc8fbcfff7cd3b801dcee22e87bc2598">calibrateImageRejection</a> (float freqMin, float freqMax)</td></tr>
+<tr class="memdesc:adc8fbcfff7cd3b801dcee22e87bc2598"><td class="mdescLeft">&#160;</td><td class="mdescRight">Perform image rejection calibration for the specified frequency band. WARNING: Use at your own risk! Setting incorrect values may lead to decreased performance.  <a href="class_l_r11x0.html#adc8fbcfff7cd3b801dcee22e87bc2598">More...</a><br /></td></tr>
+<tr class="separator:adc8fbcfff7cd3b801dcee22e87bc2598"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a492b2d057dd803c3884fa1adc8e22534"><td class="memItemLeft" align="right" valign="top">int16_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_l_r11x0.html#a492b2d057dd803c3884fa1adc8e22534">transmit</a> (const char *str, uint8_t addr=0)</td></tr>
 <tr class="memdesc:a492b2d057dd803c3884fa1adc8e22534"><td class="mdescLeft">&#160;</td><td class="mdescRight">C-string transmit method.  <a href="class_l_r11x0.html#a492b2d057dd803c3884fa1adc8e22534">More...</a><br /></td></tr>
 <tr class="separator:a492b2d057dd803c3884fa1adc8e22534"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -424,6 +451,18 @@ void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="clas
 <tr class="memitem:a977e5236693960bb1c79090a201e9e1c inherit pub_methods_class_physical_layer"><td class="memItemLeft" align="right" valign="top">float&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_physical_layer.html#a977e5236693960bb1c79090a201e9e1c">getFreqStep</a> () const</td></tr>
 <tr class="memdesc:a977e5236693960bb1c79090a201e9e1c inherit pub_methods_class_physical_layer"><td class="mdescLeft">&#160;</td><td class="mdescRight">Gets the module frequency step size that was set in constructor.  <a href="class_physical_layer.html#a977e5236693960bb1c79090a201e9e1c">More...</a><br /></td></tr>
 <tr class="separator:a977e5236693960bb1c79090a201e9e1c inherit pub_methods_class_physical_layer"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae602ebd46d60da8670c9f353cef695d9 inherit pub_methods_class_physical_layer"><td class="memItemLeft" align="right" valign="top">uint32_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_physical_layer.html#ae602ebd46d60da8670c9f353cef695d9">getIrqMapped</a> (<a class="el" href="group__typedefs.html#gafaf66becf1112a55ba8ad7402b802b77">RadioLibIrqFlags_t</a> irq)</td></tr>
+<tr class="memdesc:ae602ebd46d60da8670c9f353cef695d9 inherit pub_methods_class_physical_layer"><td class="mdescLeft">&#160;</td><td class="mdescRight">Convert from radio-agnostic IRQ flags to radio-specific flags.  <a href="class_physical_layer.html#ae602ebd46d60da8670c9f353cef695d9">More...</a><br /></td></tr>
+<tr class="separator:ae602ebd46d60da8670c9f353cef695d9 inherit pub_methods_class_physical_layer"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2c7dd4704e3df353265010710bd26e83 inherit pub_methods_class_physical_layer"><td class="memItemLeft" align="right" valign="top">int16_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_physical_layer.html#a2c7dd4704e3df353265010710bd26e83">checkIrq</a> (RadioLibIrqType_t irq)</td></tr>
+<tr class="memdesc:a2c7dd4704e3df353265010710bd26e83 inherit pub_methods_class_physical_layer"><td class="mdescLeft">&#160;</td><td class="mdescRight">Check whether a specific IRQ bit is set (e.g. RxTimeout, CadDone).  <a href="class_physical_layer.html#a2c7dd4704e3df353265010710bd26e83">More...</a><br /></td></tr>
+<tr class="separator:a2c7dd4704e3df353265010710bd26e83 inherit pub_methods_class_physical_layer"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8564f9834a0247e93e7620c23559ceb8 inherit pub_methods_class_physical_layer"><td class="memItemLeft" align="right" valign="top">int16_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_physical_layer.html#a8564f9834a0247e93e7620c23559ceb8">setIrq</a> (<a class="el" href="group__typedefs.html#gafaf66becf1112a55ba8ad7402b802b77">RadioLibIrqFlags_t</a> irq)</td></tr>
+<tr class="memdesc:a8564f9834a0247e93e7620c23559ceb8 inherit pub_methods_class_physical_layer"><td class="mdescLeft">&#160;</td><td class="mdescRight">Set interrupt on specific IRQ bit(s) (e.g. RxTimeout, CadDone). Keep in mind that not all radio modules support all RADIOLIB_IRQ_ flags!  <a href="class_physical_layer.html#a8564f9834a0247e93e7620c23559ceb8">More...</a><br /></td></tr>
+<tr class="separator:a8564f9834a0247e93e7620c23559ceb8 inherit pub_methods_class_physical_layer"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af9a7e739e39705a72ffa8b63ec09bb15 inherit pub_methods_class_physical_layer"><td class="memItemLeft" align="right" valign="top">int16_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_physical_layer.html#af9a7e739e39705a72ffa8b63ec09bb15">clearIrq</a> (<a class="el" href="group__typedefs.html#gafaf66becf1112a55ba8ad7402b802b77">RadioLibIrqFlags_t</a> irq)</td></tr>
+<tr class="memdesc:af9a7e739e39705a72ffa8b63ec09bb15 inherit pub_methods_class_physical_layer"><td class="mdescLeft">&#160;</td><td class="mdescRight">Clear interrupt on a specific IRQ bit (e.g. RxTimeout, CadDone). Keep in mind that not all radio modules support all RADIOLIB_IRQ_ flags!  <a href="class_physical_layer.html#af9a7e739e39705a72ffa8b63ec09bb15">More...</a><br /></td></tr>
+<tr class="separator:af9a7e739e39705a72ffa8b63ec09bb15 inherit pub_methods_class_physical_layer"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:acd9171bd71aa80fb86113b612c42de53 inherit pub_methods_class_physical_layer"><td class="memItemLeft" align="right" valign="top">int32_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_physical_layer.html#acd9171bd71aa80fb86113b612c42de53">random</a> (int32_t max)</td></tr>
 <tr class="memdesc:acd9171bd71aa80fb86113b612c42de53 inherit pub_methods_class_physical_layer"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get truly random number in range 0 - max.  <a href="class_physical_layer.html#acd9171bd71aa80fb86113b612c42de53">More...</a><br /></td></tr>
 <tr class="separator:acd9171bd71aa80fb86113b612c42de53 inherit pub_methods_class_physical_layer"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -462,6 +501,9 @@ void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="clas
 virtual void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_physical_layer.html#a169a4d04c5c50d3336e274d70930d9f6">clearChannelScanAction</a> ()</td></tr>
 <tr class="memdesc:a169a4d04c5c50d3336e274d70930d9f6 inherit pub_methods_class_physical_layer"><td class="mdescLeft">&#160;</td><td class="mdescRight">Clears interrupt service routine to call when a channel scan is finished. <br /></td></tr>
 <tr class="separator:a169a4d04c5c50d3336e274d70930d9f6 inherit pub_methods_class_physical_layer"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a77415bf4ed34be18c92c0cf4b2de7149 inherit pub_methods_class_physical_layer"><td class="memItemLeft" align="right" valign="top">virtual int16_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_physical_layer.html#a77415bf4ed34be18c92c0cf4b2de7149">setModem</a> (ModemType_t modem)</td></tr>
+<tr class="memdesc:a77415bf4ed34be18c92c0cf4b2de7149 inherit pub_methods_class_physical_layer"><td class="mdescLeft">&#160;</td><td class="mdescRight">Set modem for the radio to use. Will perform full reset and reconfigure the radio using its default parameters.  <a href="class_physical_layer.html#a77415bf4ed34be18c92c0cf4b2de7149">More...</a><br /></td></tr>
+<tr class="separator:a77415bf4ed34be18c92c0cf4b2de7149 inherit pub_methods_class_physical_layer"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-attribs"></a>
 Public Attributes</h2></td></tr>
@@ -543,8 +585,28 @@ bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="clas
 </div>
 </div>
 <h2 class="groupheader">Member Function Documentation</h2>
-<a id="a8dc6468762c36c30e9af262014e17942"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a8dc6468762c36c30e9af262014e17942">&#9670;&nbsp;</a></span>begin()</h2>
+<a id="aa9a8db401189ba0ce5117512b5db6a58"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aa9a8db401189ba0ce5117512b5db6a58">&#9670;&nbsp;</a></span>autoLDRO()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int16_t LR11x0::autoLDRO </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Re-enables automatic LDRO configuration. Only available in LoRa mode. After calling this method, LDRO will be enabled automatically when symbol length exceeds 16 ms. </p>
+<dl class="section return"><dt>Returns</dt><dd><a class="el" href="group__status__codes.html">Status Codes</a> </dd></dl>
+
+</div>
+</div>
+<a id="aa2b69f68ff6171b11a1141c8615240fd"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aa2b69f68ff6171b11a1141c8615240fd">&#9670;&nbsp;</a></span>begin()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -583,7 +645,13 @@ bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="clas
           <td class="paramkey"></td>
           <td></td>
           <td class="paramtype">float&#160;</td>
-          <td class="paramname"><em>tcxoVoltage</em>&#160;</td>
+          <td class="paramname"><em>tcxoVoltage</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">bool&#160;</td>
+          <td class="paramname"><em>high</em> = <code>false</code>&#160;</td>
         </tr>
         <tr>
           <td></td>
@@ -602,6 +670,7 @@ bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="clas
     <tr><td class="paramname">syncWord</td><td>1-byte LoRa sync word. </td></tr>
     <tr><td class="paramname">preambleLength</td><td>LoRa preamble length in symbols </td></tr>
     <tr><td class="paramname">tcxoVoltage</td><td>TCXO reference voltage to be set. </td></tr>
+    <tr><td class="paramname">high</td><td>defaults to false for Sub-GHz band, true for frequencies above 1GHz </td></tr>
   </table>
   </dd>
 </dl>
@@ -668,8 +737,46 @@ bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="clas
 
 </div>
 </div>
-<a id="a858b08fd0e7b00baf3056d32dfabb87e"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a858b08fd0e7b00baf3056d32dfabb87e">&#9670;&nbsp;</a></span>beginLRFHSS()</h2>
+<a id="ad7f31060cbab41ad53ee6fa7126cd17b"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ad7f31060cbab41ad53ee6fa7126cd17b">&#9670;&nbsp;</a></span>beginGNSS()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int16_t LR11x0::beginGNSS </td>
+          <td>(</td>
+          <td class="paramtype">uint8_t&#160;</td>
+          <td class="paramname"><em>constellations</em> = <code>RADIOLIB_LR11X0_GNSS_CONSTELLATION_GPS&#160;|&#160;RADIOLIB_LR11X0_GNSS_CONSTELLATION_BEIDOU</code>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">float&#160;</td>
+          <td class="paramname"><em>tcxoVoltage</em> = <code>1.6</code>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Initialization method for GNSS scanning. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">constellations</td><td>GNSS constellations to use (GPS, BeiDou or both). Defaults to both. </td></tr>
+    <tr><td class="paramname">tcxoVoltage</td><td>TCXO reference voltage to be set. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd><a class="el" href="group__status__codes.html">Status Codes</a> </dd></dl>
+
+</div>
+</div>
+<a id="a244ee48075d44c7064b454eb9c4afdb8"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a244ee48075d44c7064b454eb9c4afdb8">&#9670;&nbsp;</a></span>beginLRFHSS()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -685,6 +792,12 @@ bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="clas
           <td></td>
           <td class="paramtype">uint8_t&#160;</td>
           <td class="paramname"><em>cr</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">bool&#160;</td>
+          <td class="paramname"><em>narrowGrid</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
@@ -705,6 +818,7 @@ bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="clas
   <table class="params">
     <tr><td class="paramname">bw</td><td>LR-FHSS bandwidth, one of RADIOLIB_LR11X0_LR_FHSS_BW_* values. </td></tr>
     <tr><td class="paramname">cr</td><td>LR-FHSS coding rate, one of RADIOLIB_LR11X0_LR_FHSS_CR_* values. </td></tr>
+    <tr><td class="paramname">narrowGrid</td><td>Whether to use narrow (3.9 kHz) or wide (25.39 kHz) grid spacing. </td></tr>
     <tr><td class="paramname">tcxoVoltage</td><td>TCXO reference voltage to be set. </td></tr>
   </table>
   </dd>
@@ -750,6 +864,44 @@ bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="clas
 
 </div>
 </div>
+<a id="adc8fbcfff7cd3b801dcee22e87bc2598"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#adc8fbcfff7cd3b801dcee22e87bc2598">&#9670;&nbsp;</a></span>calibrateImageRejection()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int16_t LR11x0::calibrateImageRejection </td>
+          <td>(</td>
+          <td class="paramtype">float&#160;</td>
+          <td class="paramname"><em>freqMin</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">float&#160;</td>
+          <td class="paramname"><em>freqMax</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Perform image rejection calibration for the specified frequency band. WARNING: Use at your own risk! Setting incorrect values may lead to decreased performance. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">freqMin</td><td>Frequency band lower bound. </td></tr>
+    <tr><td class="paramname">freqMax</td><td>Frequency band upper bound. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd><a class="el" href="group__status__codes.html">Status Codes</a> </dd></dl>
+
+</div>
+</div>
 <a id="a4d18ad719be79c083f2b0ce77bbaa448"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a4d18ad719be79c083f2b0ce77bbaa448">&#9670;&nbsp;</a></span>checkDataRate()</h2>
 
@@ -784,6 +936,43 @@ bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="clas
 <dl class="section return"><dt>Returns</dt><dd><a class="el" href="group__status__codes.html">Status Codes</a> </dd></dl>
 
 <p>Reimplemented from <a class="el" href="class_physical_layer.html#a58d54eeb40fb586013ba48e15318abba">PhysicalLayer</a>.</p>
+
+</div>
+</div>
+<a id="aa524b0be7b8d125c24319072d6178e74"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aa524b0be7b8d125c24319072d6178e74">&#9670;&nbsp;</a></span>clearIrqFlags()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">int16_t LR11x0::clearIrqFlags </td>
+          <td>(</td>
+          <td class="paramtype">uint32_t&#160;</td>
+          <td class="paramname"><em>irq</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">override</span><span class="mlabel">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Clear interrupt on a specific IRQ bit (e.g. RxTimeout, CadDone). </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">irq</td><td>Module-specific IRQ flags. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd><a class="el" href="group__status__codes.html">Status Codes</a> </dd></dl>
+
+<p>Reimplemented from <a class="el" href="class_physical_layer.html#ac282bb78da4f4da4661dce191cbd6d87">PhysicalLayer</a>.</p>
 
 </div>
 </div>
@@ -884,6 +1073,33 @@ bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="clas
 
 </div>
 </div>
+<a id="ae0a47e772fe24c7b3f3d3288c4cd0941"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ae0a47e772fe24c7b3f3d3288c4cd0941">&#9670;&nbsp;</a></span>forceLDRO()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int16_t LR11x0::forceLDRO </td>
+          <td>(</td>
+          <td class="paramtype">bool&#160;</td>
+          <td class="paramname"><em>enable</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Forces LoRa low data rate optimization. Only available in LoRa mode. After calling this method, LDRO will always be set to the provided value, regardless of symbol length. To re-enable automatic LDRO configuration, call <a class="el" href="class_l_r11x0.html#aa9a8db401189ba0ce5117512b5db6a58" title="Re-enables automatic LDRO configuration. Only available in LoRa mode. After calling this method,...">LR11x0::autoLDRO()</a> </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">enable</td><td>Force LDRO to be always enabled (true) or disabled (false). </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd><a class="el" href="group__status__codes.html">Status Codes</a> </dd></dl>
+
+</div>
+</div>
 <a id="a1ae2cddeb7671d9b71e9c83bf020820f"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a1ae2cddeb7671d9b71e9c83bf020820f">&#9670;&nbsp;</a></span>getChannelScanResult()</h2>
 
@@ -954,8 +1170,35 @@ bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="clas
 
 </div>
 </div>
-<a id="a6f02bff4720b5087f2a68834182651df"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a6f02bff4720b5087f2a68834182651df">&#9670;&nbsp;</a></span>getGnssPosition()</h2>
+<a id="a748d30cb7a0b419066f6361a966b306f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a748d30cb7a0b419066f6361a966b306f">&#9670;&nbsp;</a></span>getGnssAlmanacStatus()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int16_t LR11x0::getGnssAlmanacStatus </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="struct_l_r11x0_gnss_almanac_status__t.html">LR11x0GnssAlmanacStatus_t</a> *&#160;</td>
+          <td class="paramname"><em>stat</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Read information about the almanac. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">stat</td><td>Pointer to structure to save the almanac status into. This is not the actual almanac, just a structure providing information about it. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd><a class="el" href="group__status__codes.html">Status Codes</a> </dd></dl>
+
+</div>
+</div>
+<a id="a19a4b4a138dbd0e5c8f980de0f6419e4"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a19a4b4a138dbd0e5c8f980de0f6419e4">&#9670;&nbsp;</a></span>getGnssPosition()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -963,14 +1206,8 @@ bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="clas
         <tr>
           <td class="memname">int16_t LR11x0::getGnssPosition </td>
           <td>(</td>
-          <td class="paramtype">float *&#160;</td>
-          <td class="paramname"><em>lat</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">float *&#160;</td>
-          <td class="paramname"><em>lon</em>, </td>
+          <td class="paramtype"><a class="el" href="struct_l_r11x0_gnss_position__t.html">LR11x0GnssPosition_t</a> *&#160;</td>
+          <td class="paramname"><em>pos</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
@@ -986,12 +1223,11 @@ bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="clas
       </table>
 </div><div class="memdoc">
 
-<p>Get GNSS position. CAUTION: Work in progress! Most data is returned via debug prints. </p>
+<p>Get GNSS position. Called after gnssScan to retrieve the position calculated by the internal solver. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">lat</td><td>Pointer to a variable where latitude in degrees will be saved. </td></tr>
-    <tr><td class="paramname">lon</td><td>Pointer to a variable where longitude in degrees will be saved. </td></tr>
-    <tr><td class="paramname">filtered</td><td>Whether to save the filtered, or unfiltered value. Defaults to true (filtered). </td></tr>
+    <tr><td class="paramname">pos</td><td>Pointer to <a class="el" href="struct_l_r11x0_gnss_position__t.html" title="Structure to report position from LR11x0 internal solver.">LR11x0GnssPosition_t</a> structure to populate. </td></tr>
+    <tr><td class="paramname">filtered</td><td>Whether to save the filtered, or unfiltered values. Defaults to true (filtered). </td></tr>
   </table>
   </dd>
 </dl>
@@ -999,30 +1235,71 @@ bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="clas
 
 </div>
 </div>
-<a id="a3f5a92e557dd580cb27824246a9049c1"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a3f5a92e557dd580cb27824246a9049c1">&#9670;&nbsp;</a></span>getGnssScanResult()</h2>
+<a id="a97a3f23b796257135a9afd33c28e8ed5"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a97a3f23b796257135a9afd33c28e8ed5">&#9670;&nbsp;</a></span>getGnssSatellites()</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">int16_t LR11x0::getGnssScanResult </td>
+          <td class="memname">int16_t LR11x0::getGnssSatellites </td>
           <td>(</td>
-          <td class="paramtype">uint16_t&#160;</td>
-          <td class="paramname"><em>size</em></td><td>)</td>
+          <td class="paramtype"><a class="el" href="struct_l_r11x0_gnss_satellite__t.html">LR11x0GnssSatellite_t</a> *&#160;</td>
+          <td class="paramname"><em>sats</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
           <td></td>
+          <td class="paramtype">uint8_t&#160;</td>
+          <td class="paramname"><em>numSats</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
         </tr>
       </table>
 </div><div class="memdoc">
 
-<p>Get GNSS scan result. CAUTION: Work in progress! Most data is returned via debug prints. </p>
+<p>Get GNSS satellites found during the last scan. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">size</td><td>Result size to read. </td></tr>
+    <tr><td class="paramname">sats</td><td>Pointer to array of <a class="el" href="struct_l_r11x0_gnss_satellite__t.html" title="Structure to save information about a satellite found during GNSS scan.">LR11x0GnssSatellite_t</a> structures to populate. </td></tr>
+    <tr><td class="paramname">numSats</td><td>Number of satellites to read. Can be retrieved from <a class="el" href="struct_l_r11x0_gnss_result__t.html" title="Structure to report information results of a GNSS scan.">LR11x0GnssResult_t</a> passed to gnssScan. </td></tr>
   </table>
   </dd>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd><a class="el" href="group__status__codes.html">Status Codes</a> </dd></dl>
+
+</div>
+</div>
+<a id="a205364e65d54f3f87b9b8f5972cdcb99"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a205364e65d54f3f87b9b8f5972cdcb99">&#9670;&nbsp;</a></span>getIrqFlags()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">uint32_t LR11x0::getIrqFlags </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">override</span><span class="mlabel">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Read currently active IRQ flags. </p>
+<dl class="section return"><dt>Returns</dt><dd>IRQ flags. </dd></dl>
+
+<p>Reimplemented from <a class="el" href="class_physical_layer.html#af1caeed34b2e2ff0355467507106a1a2">PhysicalLayer</a>.</p>
 
 </div>
 </div>
@@ -1043,6 +1320,43 @@ bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="clas
 
 <p>Reads the current IRQ status. </p>
 <dl class="section return"><dt>Returns</dt><dd>IRQ status bits </dd></dl>
+
+</div>
+</div>
+<a id="afe8684b336a8137cde591283297a869c"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#afe8684b336a8137cde591283297a869c">&#9670;&nbsp;</a></span>getModem()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">int16_t LR11x0::getModem </td>
+          <td>(</td>
+          <td class="paramtype">ModemType_t *&#160;</td>
+          <td class="paramname"><em>modem</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">override</span><span class="mlabel">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Get modem currently in use by the radio. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">modem</td><td>Pointer to a variable to save the retrieved configuration into. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd><a class="el" href="group__status__codes.html">Status Codes</a> </dd></dl>
+
+<p>Reimplemented from <a class="el" href="class_physical_layer.html#af061879bf694735297593c048d04a196">PhysicalLayer</a>.</p>
 
 </div>
 </div>
@@ -1317,8 +1631,46 @@ bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="clas
 
 </div>
 </div>
-<a id="a9ec306f25f187415aac23906c0a948b1"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a9ec306f25f187415aac23906c0a948b1">&#9670;&nbsp;</a></span>gnssScan()</h2>
+<a id="ab2dbab0fe3433e914c19a8d03fe32358"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ab2dbab0fe3433e914c19a8d03fe32358">&#9670;&nbsp;</a></span>gnssDelayUntilSubframe()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int16_t LR11x0::gnssDelayUntilSubframe </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="struct_l_r11x0_gnss_almanac_status__t.html">LR11x0GnssAlmanacStatus_t</a> *&#160;</td>
+          <td class="paramname"><em>stat</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">uint8_t&#160;</td>
+          <td class="paramname"><em>constellation</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Blocking wait until the next subframe with almanac data is available. Used to control timing during almanac update from satellite. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">stat</td><td>Pointer to structure containing the almanac status read by getGnssAlmanacStatus. This is not the actual almanac, just a structure providing information about it. </td></tr>
+    <tr><td class="paramname">constellation</td><td>Constellation to wait for, one of RADIOLIB_LR11X0_GNSS_CONSTELLATION_*. Constellations cannot be updated at the same time, but rather must be updated sequentially! </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd><a class="el" href="group__status__codes.html">Status Codes</a> </dd></dl>
+
+</div>
+</div>
+<a id="ad9bfaf0bdd7045f5d41f18f3f953c294"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ad9bfaf0bdd7045f5d41f18f3f953c294">&#9670;&nbsp;</a></span>gnssScan()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -1326,17 +1678,17 @@ bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="clas
         <tr>
           <td class="memname">int16_t LR11x0::gnssScan </td>
           <td>(</td>
-          <td class="paramtype">uint16_t *&#160;</td>
-          <td class="paramname"><em>resSize</em></td><td>)</td>
+          <td class="paramtype"><a class="el" href="struct_l_r11x0_gnss_result__t.html">LR11x0GnssResult_t</a> *&#160;</td>
+          <td class="paramname"><em>res</em> = <code>NULL</code></td><td>)</td>
           <td></td>
         </tr>
       </table>
 </div><div class="memdoc">
 
-<p>Performs GNSS scan. CAUTION: Work in progress! Most data is returned via debug prints. </p>
+<p>Performs GNSS scan. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">resSize</td><td>Pointer to a variable in which the result size will be saved. </td></tr>
+    <tr><td class="paramname">res</td><td>Pointer to <a class="el" href="struct_l_r11x0_gnss_position__t.html" title="Structure to report position from LR11x0 internal solver.">LR11x0GnssPosition_t</a> structure to populate. Will not be saved if set to NULL, defaults to NULL. </td></tr>
   </table>
   </dd>
 </dl>
@@ -1408,54 +1760,6 @@ bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="clas
 
 </div>
 </div>
-<a id="af441859fbeed4ee5d32519d26e94c68b"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#af441859fbeed4ee5d32519d26e94c68b">&#9670;&nbsp;</a></span>irqRxDoneRxTimeout()</h2>
-
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">int16_t LR11x0::irqRxDoneRxTimeout </td>
-          <td>(</td>
-          <td class="paramtype">uint32_t &amp;&#160;</td>
-          <td class="paramname"><em>irqFlags</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">uint32_t &amp;&#160;</td>
-          <td class="paramname"><em>irqMask</em>&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td></td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">override</span><span class="mlabel">virtual</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-<p>Create the flags that make up RxDone and RxTimeout used for receiving downlinks. </p>
-<dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramname">irqFlags</td><td>The flags for which IRQs must be triggered </td></tr>
-    <tr><td class="paramname">irqMask</td><td>Mask indicating which IRQ triggers a DIO </td></tr>
-  </table>
-  </dd>
-</dl>
-<dl class="section return"><dt>Returns</dt><dd><a class="el" href="group__status__codes.html">Status Codes</a> </dd></dl>
-
-<p>Reimplemented from <a class="el" href="class_physical_layer.html#af44a10b29e21d4de7794eefb8b5ade63">PhysicalLayer</a>.</p>
-
-</div>
-</div>
 <a id="a79818dae19d69d33a5a1facbb91c3774"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a79818dae19d69d33a5a1facbb91c3774">&#9670;&nbsp;</a></span>isGnssScanCapable()</h2>
 
@@ -1471,38 +1775,8 @@ bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="clas
       </table>
 </div><div class="memdoc">
 
-<p>Method to check whether the device is capable of performing a GNSS scan. CAUTION: Work in progress! Most data is returned via debug prints. </p>
+<p>Method to check whether the device is capable of performing a GNSS scan. </p>
 <dl class="section return"><dt>Returns</dt><dd><a class="el" href="group__status__codes.html">Status Codes</a> </dd></dl>
-
-</div>
-</div>
-<a id="a8d3e5877dcd784c8e922f32ff773dc61"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a8d3e5877dcd784c8e922f32ff773dc61">&#9670;&nbsp;</a></span>isRxTimeout()</h2>
-
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">bool LR11x0::isRxTimeout </td>
-          <td>(</td>
-          <td class="paramname"></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">override</span><span class="mlabel">virtual</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-<p>Check whether the IRQ bit for RxTimeout is set. </p>
-<dl class="section return"><dt>Returns</dt><dd>Whether RxTimeout IRQ is set </dd></dl>
-
-<p>Reimplemented from <a class="el" href="class_physical_layer.html#acb8d8182a32439fe91f2806d73e629f4">PhysicalLayer</a>.</p>
 
 </div>
 </div>
@@ -1624,7 +1898,7 @@ bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="clas
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">data</td><td>Pointer to array to save the received binary data. </td></tr>
-    <tr><td class="paramname">len</td><td>Number of bytes that will be received. Must be known in advance for binary transmissions. </td></tr>
+    <tr><td class="paramname">len</td><td>Packet length, needed for some modules under special circumstances (e.g. LoRa implicit header mode). </td></tr>
   </table>
   </dd>
 </dl>
@@ -1760,29 +2034,60 @@ bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="clas
 
 </div>
 </div>
-<a id="a99ece57e55ee0001671165213b409a44"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a99ece57e55ee0001671165213b409a44">&#9670;&nbsp;</a></span>scanChannel() <span class="overload">[2/2]</span></h2>
+<a id="a5e8f21878bdab1439805aea1e9da168d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a5e8f21878bdab1439805aea1e9da168d">&#9670;&nbsp;</a></span>scanChannel() <span class="overload">[2/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">int16_t LR11x0::scanChannel </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="union_channel_scan_config__t.html">ChannelScanConfig_t</a> &amp;&#160;</td>
+          <td class="paramname"><em>config</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">override</span><span class="mlabel">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Performs scan for LoRa transmission in the current channel. Detects both preamble and payload. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">config</td><td>CAD configuration structure. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd><a class="el" href="group__status__codes.html">Status Codes</a> </dd></dl>
+
+<p>Reimplemented from <a class="el" href="class_physical_layer.html#af788cf83ceb0222cd0fa4a1323b9041b">PhysicalLayer</a>.</p>
+
+</div>
+</div>
+<a id="a70d9849eb8e5ce2090e4e332252753d7"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a70d9849eb8e5ce2090e4e332252753d7">&#9670;&nbsp;</a></span>setBandwidth()</h2>
 
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">int16_t LR11x0::scanChannel </td>
+          <td class="memname">int16_t LR11x0::setBandwidth </td>
           <td>(</td>
-          <td class="paramtype">uint8_t&#160;</td>
-          <td class="paramname"><em>symbolNum</em>, </td>
+          <td class="paramtype">float&#160;</td>
+          <td class="paramname"><em>bw</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
-          <td class="paramtype">uint8_t&#160;</td>
-          <td class="paramname"><em>detPeak</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">uint8_t&#160;</td>
-          <td class="paramname"><em>detMin</em>&#160;</td>
+          <td class="paramtype">bool&#160;</td>
+          <td class="paramname"><em>high</em> = <code>false</code>&#160;</td>
         </tr>
         <tr>
           <td></td>
@@ -1792,39 +2097,11 @@ bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="clas
       </table>
 </div><div class="memdoc">
 
-<p>Performs scan for LoRa transmission in the current channel. Detects both preamble and payload. </p>
-<dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramname">symbolNum</td><td>Number of symbols for CAD detection. </td></tr>
-    <tr><td class="paramname">detPeak</td><td>Peak value for CAD detection. </td></tr>
-    <tr><td class="paramname">detMin</td><td>Minimum value for CAD detection. </td></tr>
-  </table>
-  </dd>
-</dl>
-<dl class="section return"><dt>Returns</dt><dd><a class="el" href="group__status__codes.html">Status Codes</a> </dd></dl>
-
-</div>
-</div>
-<a id="abf961ec7d93feb6472f26b7b976ee0c9"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#abf961ec7d93feb6472f26b7b976ee0c9">&#9670;&nbsp;</a></span>setBandwidth()</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">int16_t LR11x0::setBandwidth </td>
-          <td>(</td>
-          <td class="paramtype">float&#160;</td>
-          <td class="paramname"><em>bw</em></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p>Sets LoRa bandwidth. Allowed values are 62.5, 125.0, 250.0 and 500.0 kHz. </p>
+<p>Sets LoRa bandwidth. Allowed values are 62.5, 125.0, 250.0 and 500.0 kHz. (default, high = false) </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">bw</td><td>LoRa bandwidth to be set in kHz. </td></tr>
+    <tr><td class="paramname">high</td><td>if set to true, allowed bandwidth is 203.125, 406.25 and 812.5 kHz, frequency must be above 1GHz </td></tr>
   </table>
   </dd>
 </dl>
@@ -2160,6 +2437,43 @@ bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="clas
 
 </div>
 </div>
+<a id="a62c715ab18ea8a2e08a2791d3e764ee9"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a62c715ab18ea8a2e08a2791d3e764ee9">&#9670;&nbsp;</a></span>setIrqFlags()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">int16_t LR11x0::setIrqFlags </td>
+          <td>(</td>
+          <td class="paramtype">uint32_t&#160;</td>
+          <td class="paramname"><em>irq</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">override</span><span class="mlabel">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Set interrupt on IRQ pin to be sent on a specific IRQ bit (e.g. RxTimeout, CadDone). </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">irq</td><td>Module-specific IRQ flags. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd><a class="el" href="group__status__codes.html">Status Codes</a> </dd></dl>
+
+<p>Reimplemented from <a class="el" href="class_physical_layer.html#af88dcb54dc8e9a1edaf9f1c3e5ee2b74">PhysicalLayer</a>.</p>
+
+</div>
+</div>
 <a id="a8c1def9a01021a52f5bb82c119a9ad35"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a8c1def9a01021a52f5bb82c119a9ad35">&#9670;&nbsp;</a></span>setLrFhssConfig()</h2>
 
@@ -2445,10 +2759,10 @@ bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="clas
 <div class="line">  radio.setRfSwitchTable(rfswitch_pins, rfswitch_table);</div>
 <div class="line">  ...</div>
 <div class="line">}</div>
-<div class="ttc" id="aclass_module_html_a5a67b3a63420d762ecba9448671c99bfa269f4bc8ba3eb3d8568feb7b2decf571"><div class="ttname"><a href="class_module.html#a5a67b3a63420d762ecba9448671c99bfa269f4bc8ba3eb3d8568feb7b2decf571">Module::MODE_TX</a></div><div class="ttdeci">@ MODE_TX</div><div class="ttdoc">Transmission mode.</div><div class="ttdef"><b>Definition:</b> Module.h:111</div></div>
-<div class="ttc" id="aclass_module_html_a5a67b3a63420d762ecba9448671c99bfa505acc66c5e0faa83d2216aca5f3e671"><div class="ttname"><a href="class_module.html#a5a67b3a63420d762ecba9448671c99bfa505acc66c5e0faa83d2216aca5f3e671">Module::MODE_IDLE</a></div><div class="ttdeci">@ MODE_IDLE</div><div class="ttdoc">Idle mode.</div><div class="ttdef"><b>Definition:</b> Module.h:105</div></div>
-<div class="ttc" id="aclass_module_html_a5a67b3a63420d762ecba9448671c99bfa7664838bb0818663f55b3354fec8a18f"><div class="ttname"><a href="class_module.html#a5a67b3a63420d762ecba9448671c99bfa7664838bb0818663f55b3354fec8a18f">Module::MODE_RX</a></div><div class="ttdeci">@ MODE_RX</div><div class="ttdoc">Receive mode.</div><div class="ttdef"><b>Definition:</b> Module.h:108</div></div>
-<div class="ttc" id="astruct_module_1_1_rf_switch_mode__t_html"><div class="ttname"><a href="struct_module_1_1_rf_switch_mode__t.html">Module::RfSwitchMode_t</a></div><div class="ttdoc">Description of RF switch pin states for a single mode. See setRfSwitchTable for details.</div><div class="ttdef"><b>Definition:</b> Module.h:81</div></div>
+<div class="ttc" id="aclass_module_html_a5a67b3a63420d762ecba9448671c99bfa269f4bc8ba3eb3d8568feb7b2decf571"><div class="ttname"><a href="class_module.html#a5a67b3a63420d762ecba9448671c99bfa269f4bc8ba3eb3d8568feb7b2decf571">Module::MODE_TX</a></div><div class="ttdeci">@ MODE_TX</div><div class="ttdoc">Transmission mode.</div><div class="ttdef"><b>Definition:</b> Module.h:119</div></div>
+<div class="ttc" id="aclass_module_html_a5a67b3a63420d762ecba9448671c99bfa505acc66c5e0faa83d2216aca5f3e671"><div class="ttname"><a href="class_module.html#a5a67b3a63420d762ecba9448671c99bfa505acc66c5e0faa83d2216aca5f3e671">Module::MODE_IDLE</a></div><div class="ttdeci">@ MODE_IDLE</div><div class="ttdoc">Idle mode.</div><div class="ttdef"><b>Definition:</b> Module.h:113</div></div>
+<div class="ttc" id="aclass_module_html_a5a67b3a63420d762ecba9448671c99bfa7664838bb0818663f55b3354fec8a18f"><div class="ttname"><a href="class_module.html#a5a67b3a63420d762ecba9448671c99bfa7664838bb0818663f55b3354fec8a18f">Module::MODE_RX</a></div><div class="ttdeci">@ MODE_RX</div><div class="ttdoc">Receive mode.</div><div class="ttdef"><b>Definition:</b> Module.h:116</div></div>
+<div class="ttc" id="astruct_module_1_1_rf_switch_mode__t_html"><div class="ttname"><a href="struct_module_1_1_rf_switch_mode__t.html">Module::RfSwitchMode_t</a></div><div class="ttdoc">Description of RF switch pin states for a single mode. See setRfSwitchTable for details.</div><div class="ttdef"><b>Definition:</b> Module.h:89</div></div>
 </div><!-- fragment --> 
 </div>
 </div>
@@ -2582,35 +2896,8 @@ bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="clas
 
 </div>
 </div>
-<a id="a7ffa48f1b6aaaa3f48e4b51f8ada59d8"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a7ffa48f1b6aaaa3f48e4b51f8ada59d8">&#9670;&nbsp;</a></span>setSyncWord() <span class="overload">[1/2]</span></h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">int16_t LR11x0::setSyncWord </td>
-          <td>(</td>
-          <td class="paramtype">uint32_t&#160;</td>
-          <td class="paramname"><em>syncWord</em></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p>Sets LoRa or LR-FHSS sync word. </p>
-<dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramname">syncWord</td><td>LoRa or LR-FHSS sync word to be set. For LoRa, only 8 least significant bits will be used </td></tr>
-  </table>
-  </dd>
-</dl>
-<dl class="section return"><dt>Returns</dt><dd><a class="el" href="group__status__codes.html">Status Codes</a> </dd></dl>
-
-</div>
-</div>
 <a id="ab8c54b1b105605ffe0908c5ff9362932"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ab8c54b1b105605ffe0908c5ff9362932">&#9670;&nbsp;</a></span>setSyncWord() <span class="overload">[2/2]</span></h2>
+<h2 class="memtitle"><span class="permalink"><a href="#ab8c54b1b105605ffe0908c5ff9362932">&#9670;&nbsp;</a></span>setSyncWord() <span class="overload">[1/2]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -2654,6 +2941,33 @@ bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="clas
 <dl class="section return"><dt>Returns</dt><dd><a class="el" href="group__status__codes.html">Status Codes</a> </dd></dl>
 
 <p>Reimplemented from <a class="el" href="class_physical_layer.html#a6c71cdc1238e1368274670758431a977">PhysicalLayer</a>.</p>
+
+</div>
+</div>
+<a id="aee7dbdbd76f4639395af4a0db17025a7"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aee7dbdbd76f4639395af4a0db17025a7">&#9670;&nbsp;</a></span>setSyncWord() <span class="overload">[2/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int16_t LR11x0::setSyncWord </td>
+          <td>(</td>
+          <td class="paramtype">uint8_t&#160;</td>
+          <td class="paramname"><em>syncWord</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Sets LoRa sync word. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">syncWord</td><td>LoRa sync word to be set. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd><a class="el" href="group__status__codes.html">Status Codes</a> </dd></dl>
 
 </div>
 </div>
@@ -2925,48 +3239,40 @@ bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="clas
 
 </div>
 </div>
-<a id="aa09eb53b0c32a5f229e14c46bfe45a4f"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#aa09eb53b0c32a5f229e14c46bfe45a4f">&#9670;&nbsp;</a></span>startChannelScan() <span class="overload">[2/2]</span></h2>
+<a id="ab073ade3f6b9bbb383e388904812f575"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ab073ade3f6b9bbb383e388904812f575">&#9670;&nbsp;</a></span>startChannelScan() <span class="overload">[2/2]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
       <table class="memname">
         <tr>
           <td class="memname">int16_t LR11x0::startChannelScan </td>
           <td>(</td>
-          <td class="paramtype">uint8_t&#160;</td>
-          <td class="paramname"><em>symbolNum</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
+          <td class="paramtype">const <a class="el" href="union_channel_scan_config__t.html">ChannelScanConfig_t</a> &amp;&#160;</td>
+          <td class="paramname"><em>config</em></td><td>)</td>
           <td></td>
-          <td class="paramtype">uint8_t&#160;</td>
-          <td class="paramname"><em>detPeak</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">uint8_t&#160;</td>
-          <td class="paramname"><em>detMin</em>&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td></td>
         </tr>
       </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">override</span><span class="mlabel">virtual</span></span>  </td>
+  </tr>
+</table>
 </div><div class="memdoc">
 
-<p>Interrupt-driven channel activity detection method. IRQ1 will be activated when LoRa preamble is detected, or upon timeout. </p>
+<p>Interrupt-driven channel activity detection method. IRQ pin will be activated when LoRa preamble is detected, or upon timeout. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">symbolNum</td><td>Number of symbols for CAD detection. </td></tr>
-    <tr><td class="paramname">detPeak</td><td>Peak value for CAD detection. </td></tr>
-    <tr><td class="paramname">detMin</td><td>Minimum value for CAD detection. </td></tr>
+    <tr><td class="paramname">config</td><td>CAD configuration structure. </td></tr>
   </table>
   </dd>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd><a class="el" href="group__status__codes.html">Status Codes</a> </dd></dl>
+
+<p>Reimplemented from <a class="el" href="class_physical_layer.html#a82a52062d9259c2c546d7bf8072b7a72">PhysicalLayer</a>.</p>
 
 </div>
 </div>
@@ -3058,7 +3364,7 @@ bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="clas
 </dl>
 <dl class="section return"><dt>Returns</dt><dd><a class="el" href="group__status__codes.html">Status Codes</a> </dd></dl>
 
-<p>Reimplemented from <a class="el" href="class_physical_layer.html#ab913944238f4dfd950d36651eb3c4892">PhysicalLayer</a>.</p>
+<p>Reimplemented from <a class="el" href="class_physical_layer.html#ac88f9185b5e9fdc1d89df9797dcdd9b7">PhysicalLayer</a>.</p>
 
 </div>
 </div>
@@ -3404,6 +3710,33 @@ bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="clas
     <tr><td class="paramname">image</td><td>Pointer to the image to upload. </td></tr>
     <tr><td class="paramname">size</td><td>Size of the image in 32-bit words. </td></tr>
     <tr><td class="paramname">nonvolatile</td><td>Set to true when the image is saved in non-volatile memory of the host processor, or to false when the patch is in its RAM. Defaults to true. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd><a class="el" href="group__status__codes.html">Status Codes</a> </dd></dl>
+
+</div>
+</div>
+<a id="a96aa9566399e46fc03f2b73b44058e3f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a96aa9566399e46fc03f2b73b44058e3f">&#9670;&nbsp;</a></span>updateGnssAlmanac()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int16_t LR11x0::updateGnssAlmanac </td>
+          <td>(</td>
+          <td class="paramtype">uint8_t&#160;</td>
+          <td class="paramname"><em>constellation</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Perform almanac update. Must be called immediately after gnssDelayUntilSubframe. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">constellation</td><td>Constellation to update, one of RADIOLIB_LR11X0_GNSS_CONSTELLATION_*. Constellations cannot be updated at the same time, but rather must be updated sequentially! </td></tr>
   </table>
   </dd>
 </dl>
